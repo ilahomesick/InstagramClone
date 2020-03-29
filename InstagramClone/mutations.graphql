@@ -1,0 +1,14 @@
+mutation signUpUser($username: String!, $password: String!, $email: String!) {
+  signUp(fields: { username: $username, password: $password, email: $email }) {
+    id
+  }
+}
+
+mutation logInUser($username: String!, $password: String!){
+    logIn(fields: {username: $username, password: $password}){
+      sessionToken
+    }
+}
+mutation logOutUser{
+    logOut{id}
+}

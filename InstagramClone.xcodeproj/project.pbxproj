@@ -3,27 +3,51 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		760B7FAF2431250A00740D4A /* AlertPresentableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760B7FAE2431250A00740D4A /* AlertPresentableViewModel.swift */; };
+		760B7FB12431272600740D4A /* AlertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760B7FB02431272600740D4A /* AlertModel.swift */; };
+		7623BADF2431170B0048863F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7623BADE2431170B0048863F /* LoginViewModel.swift */; };
+		7623BAE1243117170048863F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7623BAE0243117170048863F /* LoginView.swift */; };
+		7623BAE3243117510048863F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7623BAE2243117510048863F /* Colors.swift */; };
+		7623BAE62431225C0048863F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7623BAE82431225C0048863F /* Localizable.strings */; };
+		7661F048242229E900B46CB9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661F047242229E900B46CB9 /* API.swift */; };
+		7661F04A24222A4B00B46CB9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661F04924222A4B00B46CB9 /* SignUpView.swift */; };
+		767661B22420ECE400698563 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 767661B12420ECE400698563 /* Apollo */; };
+		767661B42420ECE400698563 /* ApolloCodegenLib in Frameworks */ = {isa = PBXBuildFile; productRef = 767661B32420ECE400698563 /* ApolloCodegenLib */; };
 		76BAE1F6241BA5F600FDEC8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BAE1F5241BA5F600FDEC8D /* AppDelegate.swift */; };
 		76BAE1F8241BA5F600FDEC8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BAE1F7241BA5F600FDEC8D /* SceneDelegate.swift */; };
 		76BAE1FA241BA5F600FDEC8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BAE1F9241BA5F600FDEC8D /* ContentView.swift */; };
 		76BAE1FC241BA5F900FDEC8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76BAE1FB241BA5F900FDEC8D /* Assets.xcassets */; };
 		76BAE1FF241BA5F900FDEC8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76BAE1FE241BA5F900FDEC8D /* Preview Assets.xcassets */; };
 		76BAE202241BA5F900FDEC8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76BAE200241BA5F900FDEC8D /* LaunchScreen.storyboard */; };
+		76D4E443242FA03400DF0EBD /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D4E442242FA03400DF0EBD /* SignUpViewModel.swift */; };
+		76D4E4452430F1DB00DF0EBD /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D4E4442430F1DB00DF0EBD /* Network.swift */; };
+		76D4E4492430FABE00DF0EBD /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D4E4482430FABE00DF0EBD /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		760B7FAE2431250A00740D4A /* AlertPresentableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentableViewModel.swift; sourceTree = "<group>"; };
+		760B7FB02431272600740D4A /* AlertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModel.swift; sourceTree = "<group>"; };
+		7623BADE2431170B0048863F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		7623BAE0243117170048863F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7623BAE2243117510048863F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		7623BAE72431225C0048863F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7623BAE9243122B70048863F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7661F047242229E900B46CB9 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		7661F04924222A4B00B46CB9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		76BAE1F2241BA5F600FDEC8D /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BAE1F5241BA5F600FDEC8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76BAE1F7241BA5F600FDEC8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		76BAE1F9241BA5F600FDEC8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		76BAE1FB241BA5F900FDEC8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76BAE1FE241BA5F900FDEC8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		76BAE201241BA5F900FDEC8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76BAE203241BA5F900FDEC8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76D4E442242FA03400DF0EBD /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		76D4E4442430F1DB00DF0EBD /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		76D4E4482430FABE00DF0EBD /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				767661B42420ECE400698563 /* ApolloCodegenLib in Frameworks */,
+				767661B22420ECE400698563 /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +82,9 @@
 		76BAE1F4241BA5F600FDEC8D /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
+				76D4E442242FA03400DF0EBD /* SignUpViewModel.swift */,
+				7661F047242229E900B46CB9 /* API.swift */,
+				7661F04924222A4B00B46CB9 /* SignUpView.swift */,
 				76BAE1F5241BA5F600FDEC8D /* AppDelegate.swift */,
 				76BAE1F7241BA5F600FDEC8D /* SceneDelegate.swift */,
 				76BAE1F9241BA5F600FDEC8D /* ContentView.swift */,
@@ -63,6 +92,14 @@
 				76BAE200241BA5F900FDEC8D /* LaunchScreen.storyboard */,
 				76BAE203241BA5F900FDEC8D /* Info.plist */,
 				76BAE1FD241BA5F900FDEC8D /* Preview Content */,
+				76D4E4442430F1DB00DF0EBD /* Network.swift */,
+				76D4E4482430FABE00DF0EBD /* Response.swift */,
+				7623BADE2431170B0048863F /* LoginViewModel.swift */,
+				7623BAE0243117170048863F /* LoginView.swift */,
+				7623BAE2243117510048863F /* Colors.swift */,
+				7623BAE82431225C0048863F /* Localizable.strings */,
+				760B7FAE2431250A00740D4A /* AlertPresentableViewModel.swift */,
+				760B7FB02431272600740D4A /* AlertModel.swift */,
 			);
 			path = InstagramClone;
 			sourceTree = "<group>";
@@ -82,6 +119,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76BAE206241BA5F900FDEC8D /* Build configuration list for PBXNativeTarget "InstagramClone" */;
 			buildPhases = (
+				76195A812420DBD100F744D0 /* Generate Apollo GraphQL API */,
 				76BAE1EE241BA5F600FDEC8D /* Sources */,
 				76BAE1EF241BA5F600FDEC8D /* Frameworks */,
 				76BAE1F0241BA5F600FDEC8D /* Resources */,
@@ -91,6 +129,10 @@
 			dependencies = (
 			);
 			name = InstagramClone;
+			packageProductDependencies = (
+				767661B12420ECE400698563 /* Apollo */,
+				767661B32420ECE400698563 /* ApolloCodegenLib */,
+			);
 			productName = InstagramClone;
 			productReference = 76BAE1F2241BA5F600FDEC8D /* InstagramClone.app */;
 			productType = "com.apple.product-type.application";
@@ -116,9 +158,11 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = 76BAE1E9241BA5F600FDEC8D;
+			packageReferences = (
+				767661B02420ECE400698563 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = 76BAE1F3241BA5F600FDEC8D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76BAE202241BA5F900FDEC8D /* LaunchScreen.storyboard in Resources */,
+				7623BAE62431225C0048863F /* Localizable.strings in Resources */,
 				76BAE1FF241BA5F900FDEC8D /* Preview Assets.xcassets in Resources */,
 				76BAE1FC241BA5F900FDEC8D /* Assets.xcassets in Resources */,
 			);
@@ -141,24 +186,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		76195A812420DBD100F744D0 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		76BAE1EE241BA5F600FDEC8D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				76BAE1F6241BA5F600FDEC8D /* AppDelegate.swift in Sources */,
+				760B7FB12431272600740D4A /* AlertModel.swift in Sources */,
+				760B7FAF2431250A00740D4A /* AlertPresentableViewModel.swift in Sources */,
+				7623BAE3243117510048863F /* Colors.swift in Sources */,
+				7661F04A24222A4B00B46CB9 /* SignUpView.swift in Sources */,
 				76BAE1F8241BA5F600FDEC8D /* SceneDelegate.swift in Sources */,
+				7661F048242229E900B46CB9 /* API.swift in Sources */,
+				76D4E4492430FABE00DF0EBD /* Response.swift in Sources */,
+				76D4E443242FA03400DF0EBD /* SignUpViewModel.swift in Sources */,
+				76D4E4452430F1DB00DF0EBD /* Network.swift in Sources */,
 				76BAE1FA241BA5F600FDEC8D /* ContentView.swift in Sources */,
+				7623BAE1243117170048863F /* LoginView.swift in Sources */,
+				7623BADF2431170B0048863F /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		7623BAE82431225C0048863F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7623BAE72431225C0048863F /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		76BAE200241BA5F900FDEC8D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				76BAE201241BA5F900FDEC8D /* Base */,
+				7623BAE9243122B70048863F /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -342,6 +426,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		767661B02420ECE400698563 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.23.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		767661B12420ECE400698563 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 767661B02420ECE400698563 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		767661B32420ECE400698563 /* ApolloCodegenLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 767661B02420ECE400698563 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloCodegenLib;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 76BAE1EA241BA5F600FDEC8D /* Project object */;
 }

@@ -11,9 +11,9 @@ import SwiftUI
 
 struct AlertModel{
     
-    var title: String
+    var title: String = NSLocalizedString("alert_title_attention", comment: "")
     var message: String
-    var button: String
+    var button: String = NSLocalizedString("alert_button_ok", comment: "")
     var show: Bool
     
     

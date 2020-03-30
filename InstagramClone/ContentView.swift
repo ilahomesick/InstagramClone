@@ -10,8 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-             SignUpView()
-        //LoginView()
+             //SignUpView()
+        LoginView()
         }
 }
 

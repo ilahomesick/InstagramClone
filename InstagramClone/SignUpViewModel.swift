@@ -11,9 +11,6 @@ import Foundation
 
 class SignUpViewModel: AlertPresentableViewModel{
     
-    @Published var alertModel: AlertModel = AlertModel(title: "",message: "",button: "", show: false)
-    var response: Response = Response(success:false,message: "error")
-    
     func signUp(username: String, password:String, email: String){
         // Perform the SignUpUser mutation, passing the parameters we just got from our TextFields
         

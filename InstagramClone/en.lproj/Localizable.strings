@@ -8,3 +8,4 @@
 "alert_button_ok" = "OK";
 "lgn_title" = "Log in";
 "lgn_login" = "Log in";
+"lgn_error_empty" = "You must provide an Username and Password.";

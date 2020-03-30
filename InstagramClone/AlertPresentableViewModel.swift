@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 
 
-protocol AlertPresentableViewModel:ObservableObject {
-    var alertModel: AlertModel { get set }
+class AlertPresentableViewModel:BaseResponseViewModel {
+    @Published var alertModel: AlertModel = AlertModel(message: "", show: false) {
+        willSet { self.objectWillChange.send() }
+    }
 }

@@ -13,7 +13,7 @@ struct ProfileView: View {
     
     var body: some View {
         GeometryReader { geometry in
-            VStack(alignment: .leading){
+            VStack{
                 HStack{
                     Spacer()
                     Text(NSLocalizedString("username", comment: ""))
@@ -49,7 +49,7 @@ struct ProfileView: View {
                         Text("Your Name")
                             .foregroundColor(Colors.lightBlueColor)
                             .fontWeight(.semibold)
-                    }.padding(.leading, 10).frame(height: 130.0)
+                    }.frame(height: 130.0)
                     
                     
                     VStack{
@@ -59,7 +59,7 @@ struct ProfileView: View {
                         .fontWeight(.bold)
                         .fixedSize(horizontal: true, vertical: false)
                         
-                        Text("Publications")
+                        Text(NSLocalizedString("profile_posts", comment: ""))
                         .font(.system(size: 13))
                             .foregroundColor(Colors.lightBlueColor)
                             .lineLimit(nil)
@@ -75,7 +75,7 @@ struct ProfileView: View {
                         .fontWeight(.bold).fixedSize(horizontal: true, vertical: false)
                         .fixedSize(horizontal: true, vertical: false)
                         
-                        Text("Followers")
+                        Text(NSLocalizedString("profile_followers", comment: ""))
                         .font(.system(size: 13))
                         .foregroundColor(Colors.lightBlueColor)
                     }.padding().frame(width: nil, height: 130.0)
@@ -87,7 +87,7 @@ struct ProfileView: View {
                         .foregroundColor(Colors.lightBlueColor)
                         .fontWeight(.bold)
                         
-                        Text("Following")
+                        Text(NSLocalizedString("profile_following", comment: ""))
                         .font(.system(size: 13))
                         .foregroundColor(Colors.lightBlueColor)
                     }
@@ -97,13 +97,19 @@ struct ProfileView: View {
                     .padding(.leading, 10)
                 
                  Button(action: {}){
-                    Text("Edit Profile")
+                    Text(NSLocalizedString("profile_edit", comment: ""))
                     .fontWeight(.bold)
                         .foregroundColor(Colors.lightBlueColor)
-                        .padding(.top, 20.0)
+                        .padding(.top, 20)
                 }.frame(width: 400)
                 
                 Divider()
+                
+                TimeLineView(images: [Image("ic_logo"), Image("ic_logo"), Image("ic_logo"), Image("ic_logo")]).padding(.leading, 10)
+                
+                Divider()
+                                
+                BottomView()
                 
             }
         }

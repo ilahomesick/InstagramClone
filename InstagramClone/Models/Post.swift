@@ -14,5 +14,7 @@ struct Post{
     var description: String
     var comments: [Comment]
     var date: String
+    var id: Int
+    var username: String
     
 }

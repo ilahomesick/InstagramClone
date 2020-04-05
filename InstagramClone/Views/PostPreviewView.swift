@@ -10,11 +10,11 @@ import SwiftUI
 
 struct PostPreviewView: View {
     let model = PostPreviewViewModel()
-    let image: String
+    let image: Image
     
     var body: some View {
         //Image(self.model.getImage())
-        Image(image)
+        self.image
         .resizable()
         .frame(width: 136, height: 136)
     }
@@ -22,6 +22,6 @@ struct PostPreviewView: View {
 
 struct PostPreviewView_Previews: PreviewProvider {
     static var previews: some View {
-        PostPreviewView(image: "ic_logo")
+        PostPreviewView(image: Image("ic_logo"))
     }
 }

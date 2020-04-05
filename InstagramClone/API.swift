@@ -275,3 +275,187 @@ public final class LogOutUserMutation: GraphQLMutation {
     }
   }
 }
+
+public final class NewPostMutation: GraphQLMutation {
+  /// The raw GraphQL definition of this operation.
+  public let operationDefinition: String =
+    """
+    mutation newPost($photo: Upload!) {
+      createFile(upload: $photo) {
+        __typename
+        url
+      }
+    }
+    """
+
+  public let operationName: String = "newPost"
+
+  public var photo: String
+
+  public init(photo: String) {
+    self.photo = photo
+  }
+
+  public var variables: GraphQLMap? {
+    return ["photo": photo]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes: [String] = ["Mutation"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("createFile", arguments: ["upload": GraphQLVariable("photo")], type: .nonNull(.object(CreateFile.selections))),
+    ]
+
+    public private(set) var resultMap: ResultMap
+
+    public init(unsafeResultMap: ResultMap) {
+      self.resultMap = unsafeResultMap
+    }
+
+    public init(createFile: CreateFile) {
+      self.init(unsafeResultMap: ["__typename": "Mutation", "createFile": createFile.resultMap])
+    }
+
+    /// The create mutation can be used to create and upload a new file.
+    public var createFile: CreateFile {
+      get {
+        return CreateFile(unsafeResultMap: resultMap["createFile"]! as! ResultMap)
+      }
+      set {
+        resultMap.updateValue(newValue.resultMap, forKey: "createFile")
+      }
+    }
+
+    public struct CreateFile: GraphQLSelectionSet {
+      public static let possibleTypes: [String] = ["FileInfo"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("url", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public private(set) var resultMap: ResultMap
+
+      public init(unsafeResultMap: ResultMap) {
+        self.resultMap = unsafeResultMap
+      }
+
+      public init(url: String) {
+        self.init(unsafeResultMap: ["__typename": "FileInfo", "url": url])
+      }
+
+      public var __typename: String {
+        get {
+          return resultMap["__typename"]! as! String
+        }
+        set {
+          resultMap.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      /// This is the url in which the file can be downloaded.
+      public var url: String {
+        get {
+          return resultMap["url"]! as! String
+        }
+        set {
+          resultMap.updateValue(newValue, forKey: "url")
+        }
+      }
+    }
+  }
+}
+
+public final class CreatePostMutation: GraphQLMutation {
+  /// The raw GraphQL definition of this operation.
+  public let operationDefinition: String =
+    """
+    mutation createPost($photo: File, $description: String) {
+      createPost(fields: {description: $description, photo: $photo}) {
+        __typename
+        id
+      }
+    }
+    """
+
+  public let operationName: String = "createPost"
+
+  public var photo: String?
+  public var description: String?
+
+  public init(photo: String? = nil, description: String? = nil) {
+    self.photo = photo
+    self.description = description
+  }
+
+  public var variables: GraphQLMap? {
+    return ["photo": photo, "description": description]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes: [String] = ["Mutation"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("createPost", arguments: ["fields": ["description": GraphQLVariable("description"), "photo": GraphQLVariable("photo")]], type: .nonNull(.object(CreatePost.selections))),
+    ]
+
+    public private(set) var resultMap: ResultMap
+
+    public init(unsafeResultMap: ResultMap) {
+      self.resultMap = unsafeResultMap
+    }
+
+    public init(createPost: CreatePost) {
+      self.init(unsafeResultMap: ["__typename": "Mutation", "createPost": createPost.resultMap])
+    }
+
+    /// The createPost mutation can be used to create a new object of the Post class.
+    public var createPost: CreatePost {
+      get {
+        return CreatePost(unsafeResultMap: resultMap["createPost"]! as! ResultMap)
+      }
+      set {
+        resultMap.updateValue(newValue.resultMap, forKey: "createPost")
+      }
+    }
+
+    public struct CreatePost: GraphQLSelectionSet {
+      public static let possibleTypes: [String] = ["Post"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+      ]
+
+      public private(set) var resultMap: ResultMap
+
+      public init(unsafeResultMap: ResultMap) {
+        self.resultMap = unsafeResultMap
+      }
+
+      public init(id: GraphQLID) {
+        self.init(unsafeResultMap: ["__typename": "Post", "id": id])
+      }
+
+      public var __typename: String {
+        get {
+          return resultMap["__typename"]! as! String
+        }
+        set {
+          resultMap.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      /// This is the object id.
+      public var id: GraphQLID {
+        get {
+          return resultMap["id"]! as! GraphQLID
+        }
+        set {
+          resultMap.updateValue(newValue, forKey: "id")
+        }
+      }
+    }
+  }
+}

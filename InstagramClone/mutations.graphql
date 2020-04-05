@@ -12,3 +12,11 @@ mutation logInUser($username: String!, $password: String!){
 mutation logOutUser{
     logOut{id}
 }
+mutation newPost($photo:Upload!){
+  createFile(upload: $photo){
+    url
+  }  
+}
+mutation createPost($photo:File,$description:String){
+  createPost(fields:{description:$description, photo: $photo}){id}
+}

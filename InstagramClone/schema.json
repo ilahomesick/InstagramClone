@@ -130,6 +130,122 @@
             "deprecationReason": null
           },
           {
+            "name": "session",
+            "description": "The session query can be used to get an object of the Session class by its id.",
+            "args": [
+              {
+                "name": "id",
+                "description": "This is the object id.",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "ID",
+                    "ofType": null
+                  }
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "options",
+                "description": "The read options for the query to be executed.",
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "ReadOptionsInput",
+                  "ofType": null
+                },
+                "defaultValue": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "Session",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "sessions",
+            "description": "The sessions query can be used to find objects of the Session class.",
+            "args": [
+              {
+                "name": "where",
+                "description": "These are the conditions that the objects need to match in order to be found.",
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "SessionWhereInput",
+                  "ofType": null
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "order",
+                "description": "The fields to be used when sorting the data fetched.",
+                "type": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "ENUM",
+                      "name": "SessionOrder",
+                      "ofType": null
+                    }
+                  }
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "skip",
+                "description": "This is the number of objects that must be skipped to return.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "limit",
+                "description": "This is the limit number of objects that must be returned.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "options",
+                "description": "The read options for the query to be executed.",
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "ReadOptionsInput",
+                  "ofType": null
+                },
+                "defaultValue": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "SessionFindResult",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "user",
             "description": "The user query can be used to get an object of the User class by its id.",
             "args": [
@@ -239,6 +355,354 @@
               "ofType": {
                 "kind": "OBJECT",
                 "name": "UserFindResult",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "comment",
+            "description": "The comment query can be used to get an object of the Comment class by its id.",
+            "args": [
+              {
+                "name": "id",
+                "description": "This is the object id.",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "ID",
+                    "ofType": null
+                  }
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "options",
+                "description": "The read options for the query to be executed.",
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "ReadOptionsInput",
+                  "ofType": null
+                },
+                "defaultValue": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "Comment",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "comments",
+            "description": "The comments query can be used to find objects of the Comment class.",
+            "args": [
+              {
+                "name": "where",
+                "description": "These are the conditions that the objects need to match in order to be found.",
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "CommentWhereInput",
+                  "ofType": null
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "order",
+                "description": "The fields to be used when sorting the data fetched.",
+                "type": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "ENUM",
+                      "name": "CommentOrder",
+                      "ofType": null
+                    }
+                  }
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "skip",
+                "description": "This is the number of objects that must be skipped to return.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "limit",
+                "description": "This is the limit number of objects that must be returned.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "options",
+                "description": "The read options for the query to be executed.",
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "ReadOptionsInput",
+                  "ofType": null
+                },
+                "defaultValue": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "CommentFindResult",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "like",
+            "description": "The like query can be used to get an object of the Like class by its id.",
+            "args": [
+              {
+                "name": "id",
+                "description": "This is the object id.",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "ID",
+                    "ofType": null
+                  }
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "options",
+                "description": "The read options for the query to be executed.",
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "ReadOptionsInput",
+                  "ofType": null
+                },
+                "defaultValue": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "Like",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "likes",
+            "description": "The likes query can be used to find objects of the Like class.",
+            "args": [
+              {
+                "name": "where",
+                "description": "These are the conditions that the objects need to match in order to be found.",
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "LikeWhereInput",
+                  "ofType": null
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "order",
+                "description": "The fields to be used when sorting the data fetched.",
+                "type": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "ENUM",
+                      "name": "LikeOrder",
+                      "ofType": null
+                    }
+                  }
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "skip",
+                "description": "This is the number of objects that must be skipped to return.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "limit",
+                "description": "This is the limit number of objects that must be returned.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "options",
+                "description": "The read options for the query to be executed.",
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "ReadOptionsInput",
+                  "ofType": null
+                },
+                "defaultValue": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "LikeFindResult",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "post",
+            "description": "The post query can be used to get an object of the Post class by its id.",
+            "args": [
+              {
+                "name": "id",
+                "description": "This is the object id.",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "ID",
+                    "ofType": null
+                  }
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "options",
+                "description": "The read options for the query to be executed.",
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "ReadOptionsInput",
+                  "ofType": null
+                },
+                "defaultValue": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "Post",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "posts",
+            "description": "The posts query can be used to find objects of the Post class.",
+            "args": [
+              {
+                "name": "where",
+                "description": "These are the conditions that the objects need to match in order to be found.",
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "PostWhereInput",
+                  "ofType": null
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "order",
+                "description": "The fields to be used when sorting the data fetched.",
+                "type": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "ENUM",
+                      "name": "PostOrder",
+                      "ofType": null
+                    }
+                  }
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "skip",
+                "description": "This is the number of objects that must be skipped to return.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "limit",
+                "description": "This is the limit number of objects that must be returned.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "options",
+                "description": "The read options for the query to be executed.",
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "ReadOptionsInput",
+                  "ofType": null
+                },
+                "defaultValue": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "PostFindResult",
                 "ofType": null
               }
             },
@@ -747,6 +1211,26 @@
           {
             "kind": "OBJECT",
             "name": "User",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "Session",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "Comment",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "Like",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "Post",
             "ofType": null
           },
           {
@@ -2204,6 +2688,2834 @@
       },
       {
         "kind": "OBJECT",
+        "name": "Session",
+        "description": "The Session object type is used in operations that involve outputting objects of Session class.",
+        "fields": [
+          {
+            "name": "id",
+            "description": "This is the object id.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "ID",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "createdAt",
+            "description": "This is the date in which the object was created.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Date",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updatedAt",
+            "description": "This is the date in which the object was las updated.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Date",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "ACL",
+            "description": "This is the access control list of the object.",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Object",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "restricted",
+            "description": "This is the object restricted.",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "user",
+            "description": "This is the object user.",
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "User",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "installationId",
+            "description": "This is the object installationId.",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "sessionToken",
+            "description": "This is the object sessionToken.",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "expiresAt",
+            "description": "This is the object expiresAt.",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Date",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "createdWith",
+            "description": "This is the object createdWith.",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Object",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [
+          {
+            "kind": "INTERFACE",
+            "name": "ParseObject",
+            "ofType": null
+          }
+        ],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "SessionWhereInput",
+        "description": "The SessionWhereInput input type is used in operations that involve filtering objects of Session class.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "createdAt",
+            "description": "This is the object createdAt.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "DateWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "updatedAt",
+            "description": "This is the object updatedAt.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "DateWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "ACL",
+            "description": "This is the object ACL.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "ObjectWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "restricted",
+            "description": "This is the object restricted.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "BooleanWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "user",
+            "description": "This is the object user.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "UserPointerWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "installationId",
+            "description": "This is the object installationId.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "StringWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "sessionToken",
+            "description": "This is the object sessionToken.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "StringWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "expiresAt",
+            "description": "This is the object expiresAt.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "DateWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "createdWith",
+            "description": "This is the object createdWith.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "ObjectWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "id",
+            "description": "This is the object id.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "StringWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "OR",
+            "description": "This is the OR operator to compound constraints.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "SessionWhereInput",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "AND",
+            "description": "This is the AND operator to compound constraints.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "SessionWhereInput",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "NOR",
+            "description": "This is the NOR operator to compound constraints.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "SessionWhereInput",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "UserPointerWhereInput",
+        "description": "The UserPointerWhereInput input type is used in operations that involve filtering objects by a pointer field to User class.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "equalTo",
+            "description": "This is the equalTo operator to specify a constraint to select the objects\nwhere the value of a field equals to a specified value.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "notEqualTo",
+            "description": "This is the notEqualTo operator to specify a constraint to select the objects\nwhere the value of a field do not equal to a specified value.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "in",
+            "description": "This is the in operator to specify a constraint to select the objects where\nthe value of a field equals any value in the specified array.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "notIn",
+            "description": "This is the notIn operator to specify a constraint to select the objects where\nthe value of a field do not equal any value in the specified array.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "exists",
+            "description": "This is the exists operator to specify a constraint to select the objects where a field exists (or do not exist).",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "inQueryKey",
+            "description": "This is the inQueryKey operator to specify a constraint to select the objects\nwhere a field equals to a key in the result of a different query.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "SelectInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "notInQueryKey",
+            "description": "This is the notInQueryKey operator to specify a constraint to select the\nobjects where a field do not equal to a key in the result of a different query.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "SelectInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "inQuery",
+            "description": "This is the inQuery operator to specify a constraint to select the objects\nwhere a field equals to any of the ids in the result of a different query.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "SubqueryInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "notInQuery",
+            "description": "This is the notInQuery operator to specify a constraint to select the objects\nwhere a field do not equal to any of the ids in the result of a different query.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "SubqueryInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "SessionOrder",
+        "description": "The SessionOrder input type is used when sorting objects of the Session class.",
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "createdAt_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "createdAt_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updatedAt_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updatedAt_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "ACL_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "ACL_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "restricted_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "restricted_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "user_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "user_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "installationId_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "installationId_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "sessionToken_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "sessionToken_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "expiresAt_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "expiresAt_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "createdWith_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "createdWith_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "id_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "id_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "SessionFindResult",
+        "description": "The SessionFindResult object type is used in the Session find query to return the data of the matched objects.",
+        "fields": [
+          {
+            "name": "results",
+            "description": "This is the objects returned by the query",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "Session",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "count",
+            "description": "This is the total matched objecs count that is returned when the count flag is set.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "Comment",
+        "description": "The Comment object type is used in operations that involve outputting objects of Comment class.",
+        "fields": [
+          {
+            "name": "id",
+            "description": "This is the object id.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "ID",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "createdAt",
+            "description": "This is the date in which the object was created.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Date",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updatedAt",
+            "description": "This is the date in which the object was las updated.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Date",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "ACL",
+            "description": "This is the access control list of the object.",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Object",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "comment",
+            "description": "This is the object comment.",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "owner",
+            "description": "This is the object owner.",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Object",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "post",
+            "description": "This is the object post.",
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "Role",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [
+          {
+            "kind": "INTERFACE",
+            "name": "ParseObject",
+            "ofType": null
+          }
+        ],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "CommentWhereInput",
+        "description": "The CommentWhereInput input type is used in operations that involve filtering objects of Comment class.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "createdAt",
+            "description": "This is the object createdAt.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "DateWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "updatedAt",
+            "description": "This is the object updatedAt.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "DateWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "ACL",
+            "description": "This is the object ACL.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "ObjectWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "comment",
+            "description": "This is the object comment.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "StringWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "owner",
+            "description": "This is the object owner.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Object",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "post",
+            "description": "This is the object post.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "RolePointerWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "id",
+            "description": "This is the object id.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "StringWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "OR",
+            "description": "This is the OR operator to compound constraints.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "CommentWhereInput",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "AND",
+            "description": "This is the AND operator to compound constraints.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "CommentWhereInput",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "NOR",
+            "description": "This is the NOR operator to compound constraints.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "CommentWhereInput",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "RolePointerWhereInput",
+        "description": "The RolePointerWhereInput input type is used in operations that involve filtering objects by a pointer field to Role class.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "equalTo",
+            "description": "This is the equalTo operator to specify a constraint to select the objects\nwhere the value of a field equals to a specified value.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "notEqualTo",
+            "description": "This is the notEqualTo operator to specify a constraint to select the objects\nwhere the value of a field do not equal to a specified value.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "in",
+            "description": "This is the in operator to specify a constraint to select the objects where\nthe value of a field equals any value in the specified array.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "notIn",
+            "description": "This is the notIn operator to specify a constraint to select the objects where\nthe value of a field do not equal any value in the specified array.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "exists",
+            "description": "This is the exists operator to specify a constraint to select the objects where a field exists (or do not exist).",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "inQueryKey",
+            "description": "This is the inQueryKey operator to specify a constraint to select the objects\nwhere a field equals to a key in the result of a different query.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "SelectInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "notInQueryKey",
+            "description": "This is the notInQueryKey operator to specify a constraint to select the\nobjects where a field do not equal to a key in the result of a different query.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "SelectInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "inQuery",
+            "description": "This is the inQuery operator to specify a constraint to select the objects\nwhere a field equals to any of the ids in the result of a different query.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "SubqueryInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "notInQuery",
+            "description": "This is the notInQuery operator to specify a constraint to select the objects\nwhere a field do not equal to any of the ids in the result of a different query.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "SubqueryInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "CommentOrder",
+        "description": "The CommentOrder input type is used when sorting objects of the Comment class.",
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "createdAt_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "createdAt_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updatedAt_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updatedAt_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "ACL_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "ACL_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "comment_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "comment_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "owner_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "owner_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "post_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "post_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "id_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "id_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "CommentFindResult",
+        "description": "The CommentFindResult object type is used in the Comment find query to return the data of the matched objects.",
+        "fields": [
+          {
+            "name": "results",
+            "description": "This is the objects returned by the query",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "Comment",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "count",
+            "description": "This is the total matched objecs count that is returned when the count flag is set.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "Like",
+        "description": "The Like object type is used in operations that involve outputting objects of Like class.",
+        "fields": [
+          {
+            "name": "id",
+            "description": "This is the object id.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "ID",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "createdAt",
+            "description": "This is the date in which the object was created.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Date",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updatedAt",
+            "description": "This is the date in which the object was las updated.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Date",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "ACL",
+            "description": "This is the access control list of the object.",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Object",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "owner",
+            "description": "This is the object owner.",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Object",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "post",
+            "description": "This is the object post.",
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "Post",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [
+          {
+            "kind": "INTERFACE",
+            "name": "ParseObject",
+            "ofType": null
+          }
+        ],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "Post",
+        "description": "The Post object type is used in operations that involve outputting objects of Post class.",
+        "fields": [
+          {
+            "name": "id",
+            "description": "This is the object id.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "ID",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "createdAt",
+            "description": "This is the date in which the object was created.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Date",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updatedAt",
+            "description": "This is the date in which the object was las updated.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Date",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "ACL",
+            "description": "This is the access control list of the object.",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Object",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "description",
+            "description": "This is the object description.",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "location",
+            "description": "This is the object location.",
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "GeoPoint",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "comments",
+            "description": "Use Inline Fragment on Array to get results: https://graphql.org/learn/queries/#inline-fragments",
+            "args": [],
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "UNION",
+                "name": "ArrayResult",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "likes",
+            "description": "Use Inline Fragment on Array to get results: https://graphql.org/learn/queries/#inline-fragments",
+            "args": [],
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "UNION",
+                "name": "ArrayResult",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "photo",
+            "description": "This is the object photo.",
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "FileInfo",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [
+          {
+            "kind": "INTERFACE",
+            "name": "ParseObject",
+            "ofType": null
+          }
+        ],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "GeoPoint",
+        "description": "The GeoPoint object type is used to return the information about geo point fields.",
+        "fields": [
+          {
+            "name": "latitude",
+            "description": "This is the latitude.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Float",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "longitude",
+            "description": "This is the longitude.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Float",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "SCALAR",
+        "name": "Float",
+        "description": "The `Float` scalar type represents signed double-precision fractional values as specified by [IEEE 754](https://en.wikipedia.org/wiki/IEEE_floating_point).",
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "UNION",
+        "name": "ArrayResult",
+        "description": "Use Inline Fragment on Array to get results: https://graphql.org/learn/queries/#inline-fragments",
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": [
+          {
+            "kind": "OBJECT",
+            "name": "Element",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "Role",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "Session",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "User",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "Comment",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "Like",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "Post",
+            "ofType": null
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "Element",
+        "description": "The Element object type is used to return array items' value.",
+        "fields": [
+          {
+            "name": "value",
+            "description": "Return the value of the element in the array",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Any",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "FileInfo",
+        "description": "The FileInfo object type is used to return the information about files.",
+        "fields": [
+          {
+            "name": "name",
+            "description": "This is the file name.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "url",
+            "description": "This is the url in which the file can be downloaded.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "LikeWhereInput",
+        "description": "The LikeWhereInput input type is used in operations that involve filtering objects of Like class.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "createdAt",
+            "description": "This is the object createdAt.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "DateWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "updatedAt",
+            "description": "This is the object updatedAt.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "DateWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "ACL",
+            "description": "This is the object ACL.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "ObjectWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "owner",
+            "description": "This is the object owner.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Object",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "post",
+            "description": "This is the object post.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "PostPointerWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "id",
+            "description": "This is the object id.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "StringWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "OR",
+            "description": "This is the OR operator to compound constraints.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "LikeWhereInput",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "AND",
+            "description": "This is the AND operator to compound constraints.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "LikeWhereInput",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "NOR",
+            "description": "This is the NOR operator to compound constraints.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "LikeWhereInput",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "PostPointerWhereInput",
+        "description": "The PostPointerWhereInput input type is used in operations that involve filtering objects by a pointer field to Post class.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "equalTo",
+            "description": "This is the equalTo operator to specify a constraint to select the objects\nwhere the value of a field equals to a specified value.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "notEqualTo",
+            "description": "This is the notEqualTo operator to specify a constraint to select the objects\nwhere the value of a field do not equal to a specified value.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "in",
+            "description": "This is the in operator to specify a constraint to select the objects where\nthe value of a field equals any value in the specified array.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "notIn",
+            "description": "This is the notIn operator to specify a constraint to select the objects where\nthe value of a field do not equal any value in the specified array.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "exists",
+            "description": "This is the exists operator to specify a constraint to select the objects where a field exists (or do not exist).",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "inQueryKey",
+            "description": "This is the inQueryKey operator to specify a constraint to select the objects\nwhere a field equals to a key in the result of a different query.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "SelectInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "notInQueryKey",
+            "description": "This is the notInQueryKey operator to specify a constraint to select the\nobjects where a field do not equal to a key in the result of a different query.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "SelectInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "inQuery",
+            "description": "This is the inQuery operator to specify a constraint to select the objects\nwhere a field equals to any of the ids in the result of a different query.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "SubqueryInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "notInQuery",
+            "description": "This is the notInQuery operator to specify a constraint to select the objects\nwhere a field do not equal to any of the ids in the result of a different query.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "SubqueryInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "LikeOrder",
+        "description": "The LikeOrder input type is used when sorting objects of the Like class.",
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "createdAt_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "createdAt_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updatedAt_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updatedAt_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "ACL_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "ACL_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "owner_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "owner_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "post_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "post_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "id_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "id_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "LikeFindResult",
+        "description": "The LikeFindResult object type is used in the Like find query to return the data of the matched objects.",
+        "fields": [
+          {
+            "name": "results",
+            "description": "This is the objects returned by the query",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "Like",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "count",
+            "description": "This is the total matched objecs count that is returned when the count flag is set.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "PostWhereInput",
+        "description": "The PostWhereInput input type is used in operations that involve filtering objects of Post class.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "createdAt",
+            "description": "This is the object createdAt.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "DateWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "updatedAt",
+            "description": "This is the object updatedAt.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "DateWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "ACL",
+            "description": "This is the object ACL.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "ObjectWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "description",
+            "description": "This is the object description.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "StringWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "location",
+            "description": "This is the object location.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "GeoPointWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "comments",
+            "description": "This is the object comments.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "ArrayWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "likes",
+            "description": "This is the object likes.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "ArrayWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "photo",
+            "description": "This is the object photo.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "FileWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "id",
+            "description": "This is the object id.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "StringWhereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "OR",
+            "description": "This is the OR operator to compound constraints.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "PostWhereInput",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "AND",
+            "description": "This is the AND operator to compound constraints.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "PostWhereInput",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "NOR",
+            "description": "This is the NOR operator to compound constraints.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "PostWhereInput",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "GeoPointWhereInput",
+        "description": "The GeoPointWhereInput input type is used in operations that involve filtering objects by a field of type GeoPoint.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "exists",
+            "description": "This is the exists operator to specify a constraint to select the objects where a field exists (or do not exist).",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "nearSphere",
+            "description": "This is the nearSphere operator to specify a constraint to select the objects\nwhere the values of a geo point field is near to another geo point.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "GeoPointInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "maxDistance",
+            "description": "This is the maxDistance operator to specify a constraint to select the objects\nwhere the values of a geo point field is at a max distance (in radians) from\nthe geo point specified in the $nearSphere operator.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Float",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "maxDistanceInRadians",
+            "description": "This is the maxDistanceInRadians operator to specify a constraint to select\nthe objects where the values of a geo point field is at a max distance (in\nradians) from the geo point specified in the $nearSphere operator.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Float",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "maxDistanceInMiles",
+            "description": "This is the maxDistanceInMiles operator to specify a constraint to select the\nobjects where the values of a geo point field is at a max distance (in miles)\nfrom the geo point specified in the $nearSphere operator.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Float",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "maxDistanceInKilometers",
+            "description": "This is the maxDistanceInKilometers operator to specify a constraint to select\nthe objects where the values of a geo point field is at a max distance (in\nkilometers) from the geo point specified in the $nearSphere operator.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Float",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "within",
+            "description": "This is the within operator to specify a constraint to select the objects\nwhere the values of a geo point field is within a specified box.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "WithinInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "geoWithin",
+            "description": "This is the geoWithin operator to specify a constraint to select the objects\nwhere the values of a geo point field is within a specified polygon or sphere.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "GeoWithinInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "GeoPointInput",
+        "description": "The GeoPointInput type is used in operations that involve inputting fields of type geo point.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "latitude",
+            "description": "This is the latitude.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Float",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "longitude",
+            "description": "This is the longitude.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Float",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "WithinInput",
+        "description": "The WithinInput type is used to specify a within operation on a constraint.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "box",
+            "description": "This is the box to be specified.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "INPUT_OBJECT",
+                "name": "BoxInput",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "BoxInput",
+        "description": "The BoxInput type is used to specifiy a box operation on a within geo query.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "bottomLeft",
+            "description": "This is the bottom left coordinates of the box.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "INPUT_OBJECT",
+                "name": "GeoPointInput",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "upperRight",
+            "description": "This is the upper right coordinates of the box.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "INPUT_OBJECT",
+                "name": "GeoPointInput",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "GeoWithinInput",
+        "description": "The GeoWithinInput type is used to specify a geoWithin operation on a constraint.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "polygon",
+            "description": "This is the polygon to be specified.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "GeoPointInput",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "centerSphere",
+            "description": "This is the sphere to be specified.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "CenterSphereInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "CenterSphereInput",
+        "description": "The CenterSphereInput type is used to specifiy a centerSphere operation on a geoWithin query.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "center",
+            "description": "This is the center of the sphere.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "INPUT_OBJECT",
+                "name": "GeoPointInput",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "distance",
+            "description": "This is the radius of the sphere.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Float",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "ArrayWhereInput",
+        "description": "The ArrayWhereInput input type is used in operations that involve filtering objects by a field of type Array.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "equalTo",
+            "description": "This is the equalTo operator to specify a constraint to select the objects\nwhere the value of a field equals to a specified value.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "notEqualTo",
+            "description": "This is the notEqualTo operator to specify a constraint to select the objects\nwhere the value of a field do not equal to a specified value.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "lessThan",
+            "description": "This is the lessThan operator to specify a constraint to select the objects\nwhere the value of a field is less than a specified value.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "lessThanOrEqualTo",
+            "description": "This is the lessThanOrEqualTo operator to specify a constraint to select the\nobjects where the value of a field is less than or equal to a specified value.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "greaterThan",
+            "description": "This is the greaterThan operator to specify a constraint to select the objects\nwhere the value of a field is greater than a specified value.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "greaterThanOrEqualTo",
+            "description": "This is the greaterThanOrEqualTo operator to specify a constraint to select\nthe objects where the value of a field is greater than or equal to a specified value.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Any",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "in",
+            "description": "This is the in operator to specify a constraint to select the objects where\nthe value of a field equals any value in the specified array.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Any",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "notIn",
+            "description": "This is the notIn operator to specify a constraint to select the objects where\nthe value of a field do not equal any value in the specified array.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Any",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "exists",
+            "description": "This is the exists operator to specify a constraint to select the objects where a field exists (or do not exist).",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "inQueryKey",
+            "description": "This is the inQueryKey operator to specify a constraint to select the objects\nwhere a field equals to a key in the result of a different query.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "SelectInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "notInQueryKey",
+            "description": "This is the notInQueryKey operator to specify a constraint to select the\nobjects where a field do not equal to a key in the result of a different query.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "SelectInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "containedBy",
+            "description": "This is the containedBy operator to specify a constraint to select the objects\nwhere the values of an array field is contained by another specified array.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Any",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "contains",
+            "description": "This is the contains operator to specify a constraint to select the objects\nwhere the values of an array field contain all elements of another specified array.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Any",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "FileWhereInput",
+        "description": "The FileWhereInput input type is used in operations that involve filtering objects by a field of type File.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "equalTo",
+            "description": "This is the equalTo operator to specify a constraint to select the objects\nwhere the value of a field equals to a specified value.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "File",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "notEqualTo",
+            "description": "This is the notEqualTo operator to specify a constraint to select the objects\nwhere the value of a field do not equal to a specified value.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "File",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "lessThan",
+            "description": "This is the lessThan operator to specify a constraint to select the objects\nwhere the value of a field is less than a specified value.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "File",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "lessThanOrEqualTo",
+            "description": "This is the lessThanOrEqualTo operator to specify a constraint to select the\nobjects where the value of a field is less than or equal to a specified value.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "File",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "greaterThan",
+            "description": "This is the greaterThan operator to specify a constraint to select the objects\nwhere the value of a field is greater than a specified value.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "File",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "greaterThanOrEqualTo",
+            "description": "This is the greaterThanOrEqualTo operator to specify a constraint to select\nthe objects where the value of a field is greater than or equal to a specified value.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "File",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "in",
+            "description": "This is the in operator to specify a constraint to select the objects where\nthe value of a field equals any value in the specified array.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "File",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "notIn",
+            "description": "This is the notIn operator to specify a constraint to select the objects where\nthe value of a field do not equal any value in the specified array.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "File",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "exists",
+            "description": "This is the exists operator to specify a constraint to select the objects where a field exists (or do not exist).",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "inQueryKey",
+            "description": "This is the inQueryKey operator to specify a constraint to select the objects\nwhere a field equals to a key in the result of a different query.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "SelectInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "notInQueryKey",
+            "description": "This is the notInQueryKey operator to specify a constraint to select the\nobjects where a field do not equal to a key in the result of a different query.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "SelectInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "matchesRegex",
+            "description": "This is the matchesRegex operator to specify a constraint to select the\nobjects where the value of a field matches a specified regular expression.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "options",
+            "description": "This is the options operator to specify optional flags (such as \"i\" and \"m\")\nto be added to a matchesRegex operation in the same set of constraints.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "SCALAR",
+        "name": "File",
+        "description": "The File scalar type is used in operations and types that involve files.",
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "PostOrder",
+        "description": "The PostOrder input type is used when sorting objects of the Post class.",
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "createdAt_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "createdAt_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updatedAt_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updatedAt_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "ACL_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "ACL_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "description_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "description_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "location_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "location_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "comments_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "comments_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "likes_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "likes_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "photo_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "photo_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "id_ASC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "id_DESC",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "PostFindResult",
+        "description": "The PostFindResult object type is used in the Post find query to return the data of the matched objects.",
+        "fields": [
+          {
+            "name": "results",
+            "description": "This is the objects returned by the query",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "Post",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "count",
+            "description": "This is the total matched objecs count that is returned when the count flag is set.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
         "name": "Viewer",
         "description": "The Viewer object type is used in operations that involve outputting the current user data.",
         "fields": [
@@ -2592,6 +5904,105 @@
             "deprecationReason": null
           },
           {
+            "name": "createSession",
+            "description": "The createSession mutation can be used to create a new object of the Session class.",
+            "args": [
+              {
+                "name": "fields",
+                "description": "These are the fields used to create the object.",
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "CreateSessionFieldsInput",
+                  "ofType": null
+                },
+                "defaultValue": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "Session",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updateSession",
+            "description": "The updateSession mutation can be used to update an object of the Session class.",
+            "args": [
+              {
+                "name": "id",
+                "description": "This is the object id.",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "ID",
+                    "ofType": null
+                  }
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "fields",
+                "description": "These are the fields used to update the object.",
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "UpdateSessionFieldsInput",
+                  "ofType": null
+                },
+                "defaultValue": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "Session",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "deleteSession",
+            "description": "The deleteSession mutation can be used to delete an object of the Session class.",
+            "args": [
+              {
+                "name": "id",
+                "description": "This is the object id.",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "ID",
+                    "ofType": null
+                  }
+                },
+                "defaultValue": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "Session",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "createUser",
             "description": "The createUser mutation can be used to create a new object of the User class.",
             "args": [
@@ -2684,6 +6095,303 @@
               "ofType": {
                 "kind": "OBJECT",
                 "name": "User",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "createComment",
+            "description": "The createComment mutation can be used to create a new object of the Comment class.",
+            "args": [
+              {
+                "name": "fields",
+                "description": "These are the fields used to create the object.",
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "CreateCommentFieldsInput",
+                  "ofType": null
+                },
+                "defaultValue": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "Comment",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updateComment",
+            "description": "The updateComment mutation can be used to update an object of the Comment class.",
+            "args": [
+              {
+                "name": "id",
+                "description": "This is the object id.",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "ID",
+                    "ofType": null
+                  }
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "fields",
+                "description": "These are the fields used to update the object.",
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "UpdateCommentFieldsInput",
+                  "ofType": null
+                },
+                "defaultValue": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "Comment",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "deleteComment",
+            "description": "The deleteComment mutation can be used to delete an object of the Comment class.",
+            "args": [
+              {
+                "name": "id",
+                "description": "This is the object id.",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "ID",
+                    "ofType": null
+                  }
+                },
+                "defaultValue": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "Comment",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "createLike",
+            "description": "The createLike mutation can be used to create a new object of the Like class.",
+            "args": [
+              {
+                "name": "fields",
+                "description": "These are the fields used to create the object.",
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "CreateLikeFieldsInput",
+                  "ofType": null
+                },
+                "defaultValue": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "Like",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updateLike",
+            "description": "The updateLike mutation can be used to update an object of the Like class.",
+            "args": [
+              {
+                "name": "id",
+                "description": "This is the object id.",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "ID",
+                    "ofType": null
+                  }
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "fields",
+                "description": "These are the fields used to update the object.",
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "UpdateLikeFieldsInput",
+                  "ofType": null
+                },
+                "defaultValue": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "Like",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "deleteLike",
+            "description": "The deleteLike mutation can be used to delete an object of the Like class.",
+            "args": [
+              {
+                "name": "id",
+                "description": "This is the object id.",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "ID",
+                    "ofType": null
+                  }
+                },
+                "defaultValue": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "Like",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "createPost",
+            "description": "The createPost mutation can be used to create a new object of the Post class.",
+            "args": [
+              {
+                "name": "fields",
+                "description": "These are the fields used to create the object.",
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "CreatePostFieldsInput",
+                  "ofType": null
+                },
+                "defaultValue": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "Post",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updatePost",
+            "description": "The updatePost mutation can be used to update an object of the Post class.",
+            "args": [
+              {
+                "name": "id",
+                "description": "This is the object id.",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "ID",
+                    "ofType": null
+                  }
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "fields",
+                "description": "These are the fields used to update the object.",
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "UpdatePostFieldsInput",
+                  "ofType": null
+                },
+                "defaultValue": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "Post",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "deletePost",
+            "description": "The deletePost mutation can be used to delete an object of the Post class.",
+            "args": [
+              {
+                "name": "id",
+                "description": "This is the object id.",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "ID",
+                    "ofType": null
+                  }
+                },
+                "defaultValue": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "Post",
                 "ofType": null
               }
             },
@@ -3215,6 +6923,199 @@
       },
       {
         "kind": "INPUT_OBJECT",
+        "name": "CreateSessionFieldsInput",
+        "description": "The CreateSessionFieldsInput input type is used in operations that involve creation of objects in the Session class.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "ACL",
+            "description": "This is the access control list of the object.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Object",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "restricted",
+            "description": "This is the object restricted.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "user",
+            "description": "This is the object user.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "UserPointerInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "installationId",
+            "description": "This is the object installationId.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "sessionToken",
+            "description": "This is the object sessionToken.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "expiresAt",
+            "description": "This is the object expiresAt.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Date",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "createdWith",
+            "description": "This is the object createdWith.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Object",
+              "ofType": null
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "UserPointerInput",
+        "description": "Allow to link OR add and link an object of the User class.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "link",
+            "description": "Link an existing object from User class.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "createAndLink",
+            "description": "Create and link an object from User class.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "CreateUserFieldsInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "UpdateSessionFieldsInput",
+        "description": "The UpdateSessionFieldsInput input type is used in operations that involve creation of objects in the Session class.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "ACL",
+            "description": "This is the access control list of the object.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Object",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "restricted",
+            "description": "This is the object restricted.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "user",
+            "description": "This is the object user.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "UserPointerInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "installationId",
+            "description": "This is the object installationId.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "sessionToken",
+            "description": "This is the object sessionToken.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "expiresAt",
+            "description": "This is the object expiresAt.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Date",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "createdWith",
+            "description": "This is the object createdWith.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Object",
+              "ofType": null
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
         "name": "UpdateUserFieldsInput",
         "description": "The UpdateUserFieldsInput input type is used in operations that involve creation of objects in the User class.",
         "fields": null,
@@ -3285,55 +7186,416 @@
         "possibleTypes": null
       },
       {
+        "kind": "INPUT_OBJECT",
+        "name": "CreateCommentFieldsInput",
+        "description": "The CreateCommentFieldsInput input type is used in operations that involve creation of objects in the Comment class.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "ACL",
+            "description": "This is the access control list of the object.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Object",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "comment",
+            "description": "This is the object comment.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "owner",
+            "description": "This is the object owner.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Object",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "post",
+            "description": "This is the object post.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "RolePointerInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "RolePointerInput",
+        "description": "Allow to link OR add and link an object of the Role class.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "link",
+            "description": "Link an existing object from Role class.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "createAndLink",
+            "description": "Create and link an object from Role class.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "CreateRoleFieldsInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "UpdateCommentFieldsInput",
+        "description": "The UpdateCommentFieldsInput input type is used in operations that involve creation of objects in the Comment class.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "ACL",
+            "description": "This is the access control list of the object.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Object",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "comment",
+            "description": "This is the object comment.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "owner",
+            "description": "This is the object owner.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Object",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "post",
+            "description": "This is the object post.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "RolePointerInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "CreateLikeFieldsInput",
+        "description": "The CreateLikeFieldsInput input type is used in operations that involve creation of objects in the Like class.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "ACL",
+            "description": "This is the access control list of the object.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Object",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "owner",
+            "description": "This is the object owner.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Object",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "post",
+            "description": "This is the object post.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "PostPointerInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "PostPointerInput",
+        "description": "Allow to link OR add and link an object of the Post class.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "link",
+            "description": "Link an existing object from Post class.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "createAndLink",
+            "description": "Create and link an object from Post class.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "CreatePostFieldsInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "CreatePostFieldsInput",
+        "description": "The CreatePostFieldsInput input type is used in operations that involve creation of objects in the Post class.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "ACL",
+            "description": "This is the access control list of the object.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Object",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "description",
+            "description": "This is the object description.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "location",
+            "description": "This is the object location.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "GeoPointInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "comments",
+            "description": "This is the object comments.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Any",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "likes",
+            "description": "This is the object likes.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Any",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "photo",
+            "description": "This is the object photo.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "File",
+              "ofType": null
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "UpdateLikeFieldsInput",
+        "description": "The UpdateLikeFieldsInput input type is used in operations that involve creation of objects in the Like class.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "ACL",
+            "description": "This is the access control list of the object.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Object",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "owner",
+            "description": "This is the object owner.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Object",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "post",
+            "description": "This is the object post.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "PostPointerInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "UpdatePostFieldsInput",
+        "description": "The UpdatePostFieldsInput input type is used in operations that involve creation of objects in the Post class.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "ACL",
+            "description": "This is the access control list of the object.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Object",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "description",
+            "description": "This is the object description.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "location",
+            "description": "This is the object location.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "GeoPointInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "comments",
+            "description": "This is the object comments.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Any",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "likes",
+            "description": "This is the object likes.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Any",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "photo",
+            "description": "This is the object photo.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "File",
+              "ofType": null
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
         "kind": "SCALAR",
         "name": "Upload",
         "description": "The `Upload` scalar type represents a file upload.",
         "fields": null,
         "inputFields": null,
         "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "OBJECT",
-        "name": "FileInfo",
-        "description": "The FileInfo object type is used to return the information about files.",
-        "fields": [
-          {
-            "name": "name",
-            "description": "This is the file name.",
-            "args": [],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "url",
-            "description": "This is the url in which the file can be downloaded.",
-            "args": [],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          }
-        ],
-        "inputFields": null,
-        "interfaces": [],
         "enumValues": null,
         "possibleTypes": null
       },
@@ -4832,304 +9094,6 @@
         "possibleTypes": null
       },
       {
-        "kind": "UNION",
-        "name": "ArrayResult",
-        "description": "Use Inline Fragment on Array to get results: https://graphql.org/learn/queries/#inline-fragments",
-        "fields": null,
-        "inputFields": null,
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": [
-          {
-            "kind": "OBJECT",
-            "name": "Element",
-            "ofType": null
-          },
-          {
-            "kind": "OBJECT",
-            "name": "Role",
-            "ofType": null
-          },
-          {
-            "kind": "OBJECT",
-            "name": "User",
-            "ofType": null
-          }
-        ]
-      },
-      {
-        "kind": "OBJECT",
-        "name": "Element",
-        "description": "The Element object type is used to return array items' value.",
-        "fields": [
-          {
-            "name": "value",
-            "description": "Return the value of the element in the array",
-            "args": [],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any",
-                "ofType": null
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          }
-        ],
-        "inputFields": null,
-        "interfaces": [],
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "INPUT_OBJECT",
-        "name": "ArrayWhereInput",
-        "description": "The ArrayWhereInput input type is used in operations that involve filtering objects by a field of type Array.",
-        "fields": null,
-        "inputFields": [
-          {
-            "name": "equalTo",
-            "description": "This is the equalTo operator to specify a constraint to select the objects\nwhere the value of a field equals to a specified value.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "notEqualTo",
-            "description": "This is the notEqualTo operator to specify a constraint to select the objects\nwhere the value of a field do not equal to a specified value.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "lessThan",
-            "description": "This is the lessThan operator to specify a constraint to select the objects\nwhere the value of a field is less than a specified value.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "lessThanOrEqualTo",
-            "description": "This is the lessThanOrEqualTo operator to specify a constraint to select the\nobjects where the value of a field is less than or equal to a specified value.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "greaterThan",
-            "description": "This is the greaterThan operator to specify a constraint to select the objects\nwhere the value of a field is greater than a specified value.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "greaterThanOrEqualTo",
-            "description": "This is the greaterThanOrEqualTo operator to specify a constraint to select\nthe objects where the value of a field is greater than or equal to a specified value.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Any",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "in",
-            "description": "This is the in operator to specify a constraint to select the objects where\nthe value of a field equals any value in the specified array.",
-            "type": {
-              "kind": "LIST",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "notIn",
-            "description": "This is the notIn operator to specify a constraint to select the objects where\nthe value of a field do not equal any value in the specified array.",
-            "type": {
-              "kind": "LIST",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "exists",
-            "description": "This is the exists operator to specify a constraint to select the objects where a field exists (or do not exist).",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Boolean",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "inQueryKey",
-            "description": "This is the inQueryKey operator to specify a constraint to select the objects\nwhere a field equals to a key in the result of a different query.",
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "SelectInput",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "notInQueryKey",
-            "description": "This is the notInQueryKey operator to specify a constraint to select the\nobjects where a field do not equal to a key in the result of a different query.",
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "SelectInput",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "containedBy",
-            "description": "This is the containedBy operator to specify a constraint to select the objects\nwhere the values of an array field is contained by another specified array.",
-            "type": {
-              "kind": "LIST",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "contains",
-            "description": "This is the contains operator to specify a constraint to select the objects\nwhere the values of an array field contain all elements of another specified array.",
-            "type": {
-              "kind": "LIST",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          }
-        ],
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "INPUT_OBJECT",
-        "name": "BoxInput",
-        "description": "The BoxInput type is used to specifiy a box operation on a within geo query.",
-        "fields": null,
-        "inputFields": [
-          {
-            "name": "bottomLeft",
-            "description": "This is the bottom left coordinates of the box.",
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "INPUT_OBJECT",
-                "name": "GeoPointInput",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "upperRight",
-            "description": "This is the upper right coordinates of the box.",
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "INPUT_OBJECT",
-                "name": "GeoPointInput",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          }
-        ],
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "INPUT_OBJECT",
-        "name": "GeoPointInput",
-        "description": "The GeoPointInput type is used in operations that involve inputting fields of type geo point.",
-        "fields": null,
-        "inputFields": [
-          {
-            "name": "latitude",
-            "description": "This is the latitude.",
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Float",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "longitude",
-            "description": "This is the longitude.",
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Float",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          }
-        ],
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "SCALAR",
-        "name": "Float",
-        "description": "The `Float` scalar type represents signed double-precision fractional values as specified by [IEEE 754](https://en.wikipedia.org/wiki/IEEE_floating_point).",
-        "fields": null,
-        "inputFields": null,
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
         "kind": "SCALAR",
         "name": "Bytes",
         "description": "The Bytes scalar type is used in operations and types that involve base 64 binary data.",
@@ -5270,35 +9234,27 @@
       },
       {
         "kind": "INPUT_OBJECT",
-        "name": "CenterSphereInput",
-        "description": "The CenterSphereInput type is used to specifiy a centerSphere operation on a geoWithin query.",
+        "name": "CommentPointerInput",
+        "description": "Allow to link OR add and link an object of the Comment class.",
         "fields": null,
         "inputFields": [
           {
-            "name": "center",
-            "description": "This is the center of the sphere.",
+            "name": "link",
+            "description": "Link an existing object from Comment class.",
             "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "INPUT_OBJECT",
-                "name": "GeoPointInput",
-                "ofType": null
-              }
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
             },
             "defaultValue": null
           },
           {
-            "name": "distance",
-            "description": "This is the radius of the sphere.",
+            "name": "createAndLink",
+            "description": "Create and link an object from Comment class.",
             "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Float",
-                "ofType": null
-              }
+              "kind": "INPUT_OBJECT",
+              "name": "CreateCommentFieldsInput",
+              "ofType": null
             },
             "defaultValue": null
           }
@@ -5308,19 +9264,9 @@
         "possibleTypes": null
       },
       {
-        "kind": "SCALAR",
-        "name": "File",
-        "description": "The File scalar type is used in operations and types that involve files.",
-        "fields": null,
-        "inputFields": null,
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
         "kind": "INPUT_OBJECT",
-        "name": "FileWhereInput",
-        "description": "The FileWhereInput input type is used in operations that involve filtering objects by a field of type File.",
+        "name": "CommentPointerWhereInput",
+        "description": "The CommentPointerWhereInput input type is used in operations that involve\nfiltering objects by a pointer field to Comment class.",
         "fields": null,
         "inputFields": [
           {
@@ -5328,7 +9274,7 @@
             "description": "This is the equalTo operator to specify a constraint to select the objects\nwhere the value of a field equals to a specified value.",
             "type": {
               "kind": "SCALAR",
-              "name": "File",
+              "name": "ID",
               "ofType": null
             },
             "defaultValue": null
@@ -5338,47 +9284,7 @@
             "description": "This is the notEqualTo operator to specify a constraint to select the objects\nwhere the value of a field do not equal to a specified value.",
             "type": {
               "kind": "SCALAR",
-              "name": "File",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "lessThan",
-            "description": "This is the lessThan operator to specify a constraint to select the objects\nwhere the value of a field is less than a specified value.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "File",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "lessThanOrEqualTo",
-            "description": "This is the lessThanOrEqualTo operator to specify a constraint to select the\nobjects where the value of a field is less than or equal to a specified value.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "File",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "greaterThan",
-            "description": "This is the greaterThan operator to specify a constraint to select the objects\nwhere the value of a field is greater than a specified value.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "File",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "greaterThanOrEqualTo",
-            "description": "This is the greaterThanOrEqualTo operator to specify a constraint to select\nthe objects where the value of a field is greater than or equal to a specified value.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "File",
+              "name": "ID",
               "ofType": null
             },
             "defaultValue": null
@@ -5390,9 +9296,13 @@
               "kind": "LIST",
               "name": null,
               "ofType": {
-                "kind": "SCALAR",
-                "name": "File",
-                "ofType": null
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
               }
             },
             "defaultValue": null
@@ -5404,9 +9314,13 @@
               "kind": "LIST",
               "name": null,
               "ofType": {
-                "kind": "SCALAR",
-                "name": "File",
-                "ofType": null
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
               }
             },
             "defaultValue": null
@@ -5442,22 +9356,87 @@
             "defaultValue": null
           },
           {
-            "name": "matchesRegex",
-            "description": "This is the matchesRegex operator to specify a constraint to select the\nobjects where the value of a field matches a specified regular expression.",
+            "name": "inQuery",
+            "description": "This is the inQuery operator to specify a constraint to select the objects\nwhere a field equals to any of the ids in the result of a different query.",
             "type": {
-              "kind": "SCALAR",
-              "name": "String",
+              "kind": "INPUT_OBJECT",
+              "name": "SubqueryInput",
               "ofType": null
             },
             "defaultValue": null
           },
           {
-            "name": "options",
-            "description": "This is the options operator to specify optional flags (such as \"i\" and \"m\")\nto be added to a matchesRegex operation in the same set of constraints.",
+            "name": "notInQuery",
+            "description": "This is the notInQuery operator to specify a constraint to select the objects\nwhere a field do not equal to any of the ids in the result of a different query.",
             "type": {
-              "kind": "SCALAR",
-              "name": "String",
+              "kind": "INPUT_OBJECT",
+              "name": "SubqueryInput",
               "ofType": null
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "CommentRelationInput",
+        "description": "Allow to add, remove, createAndAdd objects of the Comment class into a relation field.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "add",
+            "description": "Add an existing object from the Comment class into the relation.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "remove",
+            "description": "Remove an existing object from the Comment class out of the relation.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "createAndAdd",
+            "description": "Create and add an object of the Comment class into the relation.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "CreateCommentFieldsInput",
+                  "ofType": null
+                }
+              }
             },
             "defaultValue": null
           }
@@ -5539,54 +9518,98 @@
         "possibleTypes": null
       },
       {
-        "kind": "OBJECT",
-        "name": "GeoPoint",
-        "description": "The GeoPoint object type is used to return the information about geo point fields.",
-        "fields": [
+        "kind": "INPUT_OBJECT",
+        "name": "LikePointerInput",
+        "description": "Allow to link OR add and link an object of the Like class.",
+        "fields": null,
+        "inputFields": [
           {
-            "name": "latitude",
-            "description": "This is the latitude.",
-            "args": [],
+            "name": "link",
+            "description": "Link an existing object from Like class.",
             "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Float",
-                "ofType": null
-              }
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
             },
-            "isDeprecated": false,
-            "deprecationReason": null
+            "defaultValue": null
           },
           {
-            "name": "longitude",
-            "description": "This is the longitude.",
-            "args": [],
+            "name": "createAndLink",
+            "description": "Create and link an object from Like class.",
             "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Float",
-                "ofType": null
-              }
+              "kind": "INPUT_OBJECT",
+              "name": "CreateLikeFieldsInput",
+              "ofType": null
             },
-            "isDeprecated": false,
-            "deprecationReason": null
+            "defaultValue": null
           }
         ],
-        "inputFields": null,
-        "interfaces": [],
+        "interfaces": null,
         "enumValues": null,
         "possibleTypes": null
       },
       {
         "kind": "INPUT_OBJECT",
-        "name": "GeoPointWhereInput",
-        "description": "The GeoPointWhereInput input type is used in operations that involve filtering objects by a field of type GeoPoint.",
+        "name": "LikePointerWhereInput",
+        "description": "The LikePointerWhereInput input type is used in operations that involve filtering objects by a pointer field to Like class.",
         "fields": null,
         "inputFields": [
+          {
+            "name": "equalTo",
+            "description": "This is the equalTo operator to specify a constraint to select the objects\nwhere the value of a field equals to a specified value.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "notEqualTo",
+            "description": "This is the notEqualTo operator to specify a constraint to select the objects\nwhere the value of a field do not equal to a specified value.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "in",
+            "description": "This is the in operator to specify a constraint to select the objects where\nthe value of a field equals any value in the specified array.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "notIn",
+            "description": "This is the notIn operator to specify a constraint to select the objects where\nthe value of a field do not equal any value in the specified array.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          },
           {
             "name": "exists",
             "description": "This is the exists operator to specify a constraint to select the objects where a field exists (or do not exist).",
@@ -5598,71 +9621,41 @@
             "defaultValue": null
           },
           {
-            "name": "nearSphere",
-            "description": "This is the nearSphere operator to specify a constraint to select the objects\nwhere the values of a geo point field is near to another geo point.",
+            "name": "inQueryKey",
+            "description": "This is the inQueryKey operator to specify a constraint to select the objects\nwhere a field equals to a key in the result of a different query.",
             "type": {
               "kind": "INPUT_OBJECT",
-              "name": "GeoPointInput",
+              "name": "SelectInput",
               "ofType": null
             },
             "defaultValue": null
           },
           {
-            "name": "maxDistance",
-            "description": "This is the maxDistance operator to specify a constraint to select the objects\nwhere the values of a geo point field is at a max distance (in radians) from\nthe geo point specified in the $nearSphere operator.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Float",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "maxDistanceInRadians",
-            "description": "This is the maxDistanceInRadians operator to specify a constraint to select\nthe objects where the values of a geo point field is at a max distance (in\nradians) from the geo point specified in the $nearSphere operator.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Float",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "maxDistanceInMiles",
-            "description": "This is the maxDistanceInMiles operator to specify a constraint to select the\nobjects where the values of a geo point field is at a max distance (in miles)\nfrom the geo point specified in the $nearSphere operator.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Float",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "maxDistanceInKilometers",
-            "description": "This is the maxDistanceInKilometers operator to specify a constraint to select\nthe objects where the values of a geo point field is at a max distance (in\nkilometers) from the geo point specified in the $nearSphere operator.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "Float",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "within",
-            "description": "This is the within operator to specify a constraint to select the objects\nwhere the values of a geo point field is within a specified box.",
+            "name": "notInQueryKey",
+            "description": "This is the notInQueryKey operator to specify a constraint to select the\nobjects where a field do not equal to a key in the result of a different query.",
             "type": {
               "kind": "INPUT_OBJECT",
-              "name": "WithinInput",
+              "name": "SelectInput",
               "ofType": null
             },
             "defaultValue": null
           },
           {
-            "name": "geoWithin",
-            "description": "This is the geoWithin operator to specify a constraint to select the objects\nwhere the values of a geo point field is within a specified polygon or sphere.",
+            "name": "inQuery",
+            "description": "This is the inQuery operator to specify a constraint to select the objects\nwhere a field equals to any of the ids in the result of a different query.",
             "type": {
               "kind": "INPUT_OBJECT",
-              "name": "GeoWithinInput",
+              "name": "SubqueryInput",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "notInQuery",
+            "description": "This is the notInQuery operator to specify a constraint to select the objects\nwhere a field do not equal to any of the ids in the result of a different query.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "SubqueryInput",
               "ofType": null
             },
             "defaultValue": null
@@ -5674,38 +9667,49 @@
       },
       {
         "kind": "INPUT_OBJECT",
-        "name": "WithinInput",
-        "description": "The WithinInput type is used to specify a within operation on a constraint.",
+        "name": "LikeRelationInput",
+        "description": "Allow to add, remove, createAndAdd objects of the Like class into a relation field.",
         "fields": null,
         "inputFields": [
           {
-            "name": "box",
-            "description": "This is the box to be specified.",
+            "name": "add",
+            "description": "Add an existing object from the Like class into the relation.",
             "type": {
-              "kind": "NON_NULL",
+              "kind": "LIST",
               "name": null,
               "ofType": {
-                "kind": "INPUT_OBJECT",
-                "name": "BoxInput",
-                "ofType": null
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
               }
             },
             "defaultValue": null
-          }
-        ],
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "INPUT_OBJECT",
-        "name": "GeoWithinInput",
-        "description": "The GeoWithinInput type is used to specify a geoWithin operation on a constraint.",
-        "fields": null,
-        "inputFields": [
+          },
           {
-            "name": "polygon",
-            "description": "This is the polygon to be specified.",
+            "name": "remove",
+            "description": "Remove an existing object from the Like class out of the relation.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "createAndAdd",
+            "description": "Create and add an object of the Like class into the relation.",
             "type": {
               "kind": "LIST",
               "name": null,
@@ -5714,20 +9718,10 @@
                 "name": null,
                 "ofType": {
                   "kind": "INPUT_OBJECT",
-                  "name": "GeoPointInput",
+                  "name": "CreateLikeFieldsInput",
                   "ofType": null
                 }
               }
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "centerSphere",
-            "description": "This is the sphere to be specified.",
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "CenterSphereInput",
-              "ofType": null
             },
             "defaultValue": null
           }
@@ -5898,64 +9892,13 @@
       },
       {
         "kind": "INPUT_OBJECT",
-        "name": "RolePointerInput",
-        "description": "Allow to link OR add and link an object of the Role class.",
+        "name": "PostRelationInput",
+        "description": "Allow to add, remove, createAndAdd objects of the Post class into a relation field.",
         "fields": null,
         "inputFields": [
           {
-            "name": "link",
-            "description": "Link an existing object from Role class.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "ID",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "createAndLink",
-            "description": "Create and link an object from Role class.",
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "CreateRoleFieldsInput",
-              "ofType": null
-            },
-            "defaultValue": null
-          }
-        ],
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "INPUT_OBJECT",
-        "name": "RolePointerWhereInput",
-        "description": "The RolePointerWhereInput input type is used in operations that involve filtering objects by a pointer field to Role class.",
-        "fields": null,
-        "inputFields": [
-          {
-            "name": "equalTo",
-            "description": "This is the equalTo operator to specify a constraint to select the objects\nwhere the value of a field equals to a specified value.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "ID",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "notEqualTo",
-            "description": "This is the notEqualTo operator to specify a constraint to select the objects\nwhere the value of a field do not equal to a specified value.",
-            "type": {
-              "kind": "SCALAR",
-              "name": "ID",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "in",
-            "description": "This is the in operator to specify a constraint to select the objects where\nthe value of a field equals any value in the specified array.",
+            "name": "add",
+            "description": "Add an existing object from the Post class into the relation.",
             "type": {
               "kind": "LIST",
               "name": null,
@@ -5972,8 +9915,8 @@
             "defaultValue": null
           },
           {
-            "name": "notIn",
-            "description": "This is the notIn operator to specify a constraint to select the objects where\nthe value of a field do not equal any value in the specified array.",
+            "name": "remove",
+            "description": "Remove an existing object from the Post class out of the relation.",
             "type": {
               "kind": "LIST",
               "name": null,
@@ -5990,52 +9933,20 @@
             "defaultValue": null
           },
           {
-            "name": "exists",
-            "description": "This is the exists operator to specify a constraint to select the objects where a field exists (or do not exist).",
+            "name": "createAndAdd",
+            "description": "Create and add an object of the Post class into the relation.",
             "type": {
-              "kind": "SCALAR",
-              "name": "Boolean",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "inQueryKey",
-            "description": "This is the inQueryKey operator to specify a constraint to select the objects\nwhere a field equals to a key in the result of a different query.",
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "SelectInput",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "notInQueryKey",
-            "description": "This is the notInQueryKey operator to specify a constraint to select the\nobjects where a field do not equal to a key in the result of a different query.",
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "SelectInput",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "inQuery",
-            "description": "This is the inQuery operator to specify a constraint to select the objects\nwhere a field equals to any of the ids in the result of a different query.",
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "SubqueryInput",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "notInQuery",
-            "description": "This is the notInQuery operator to specify a constraint to select the objects\nwhere a field do not equal to any of the ids in the result of a different query.",
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "SubqueryInput",
-              "ofType": null
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "CreatePostFieldsInput",
+                  "ofType": null
+                }
+              }
             },
             "defaultValue": null
           }
@@ -6507,13 +10418,13 @@
       },
       {
         "kind": "INPUT_OBJECT",
-        "name": "UserPointerInput",
-        "description": "Allow to link OR add and link an object of the User class.",
+        "name": "SessionPointerInput",
+        "description": "Allow to link OR add and link an object of the Session class.",
         "fields": null,
         "inputFields": [
           {
             "name": "link",
-            "description": "Link an existing object from User class.",
+            "description": "Link an existing object from Session class.",
             "type": {
               "kind": "SCALAR",
               "name": "ID",
@@ -6523,10 +10434,10 @@
           },
           {
             "name": "createAndLink",
-            "description": "Create and link an object from User class.",
+            "description": "Create and link an object from Session class.",
             "type": {
               "kind": "INPUT_OBJECT",
-              "name": "CreateUserFieldsInput",
+              "name": "CreateSessionFieldsInput",
               "ofType": null
             },
             "defaultValue": null
@@ -6538,8 +10449,8 @@
       },
       {
         "kind": "INPUT_OBJECT",
-        "name": "UserPointerWhereInput",
-        "description": "The UserPointerWhereInput input type is used in operations that involve filtering objects by a pointer field to User class.",
+        "name": "SessionPointerWhereInput",
+        "description": "The SessionPointerWhereInput input type is used in operations that involve\nfiltering objects by a pointer field to Session class.",
         "fields": null,
         "inputFields": [
           {
@@ -6645,6 +10556,71 @@
               "kind": "INPUT_OBJECT",
               "name": "SubqueryInput",
               "ofType": null
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "SessionRelationInput",
+        "description": "Allow to add, remove, createAndAdd objects of the Session class into a relation field.",
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "add",
+            "description": "Add an existing object from the Session class into the relation.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "remove",
+            "description": "Remove an existing object from the Session class out of the relation.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "createAndAdd",
+            "description": "Create and add an object of the Session class into the relation.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "CreateSessionFieldsInput",
+                  "ofType": null
+                }
+              }
             },
             "defaultValue": null
           }

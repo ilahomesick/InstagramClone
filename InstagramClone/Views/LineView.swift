@@ -9,20 +9,20 @@
 import SwiftUI
 
 struct LineView: View {
-    let model:LineViewViewModel
-    let images: [String]
+    //let model:LineViewViewModel
+    let images: [Image]
     
     var body: some View {
         HStack(spacing: 2){
-            PostPreviewView(image: images[0])
-            PostPreviewView(image: images[1])
-            PostPreviewView(image: images[2])
+            ForEach(0..<images.count){ image in
+                PostPreviewView(image: self.images[image])
+            }
         }
     }
 }
 
 struct LineView_Previews: PreviewProvider {
     static var previews: some View {
-        LineView(model: LineViewViewModel(), images: ["ic_logo","ic_logo","ic_logo"])
+        LineView( images: [Image("ic_logo"), Image("ic_logo"), Image("ic_logo")])
     }
 }

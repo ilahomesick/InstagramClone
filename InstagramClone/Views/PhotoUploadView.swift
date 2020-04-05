@@ -10,11 +10,13 @@ import SwiftUI
 import Photos
 
 struct PhotoUploadView: View {
-    var model: PhotoUploadViewModel = PhotoUploadViewModel()
+    @ObservedObject var model: PhotoUploadViewModel = PhotoUploadViewModel()
+    //@State var images: [Image] = self.model.retrievePics()
     
     var body: some View {
         VStack{
-            TimeLineView(images: self.model.retrievePics())
+            PostPreviewView(image: self.model.)
+            TimeLineView(images: self.images)
             
         }
     }

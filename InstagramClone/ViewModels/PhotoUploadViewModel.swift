@@ -14,14 +14,20 @@ import SwiftUI
 
 class PhotoUploadViewModel:ObservableObject{
     
-    func retrievePics()->[Image]{
+    var images: [Image] = []
+    
+    init(){
+        self.retrievePics()
+    }
+    
+    func retrievePics(){
         let allPhotosOptions = PHFetchOptions()
         allPhotosOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
         let manager = PHImageManager.default()
             // 2
         let fetchResult: PHFetchResult = PHAsset.fetchAssets(with: .image, options: allPhotosOptions)
         if(!(fetchResult.count>0)){
-            return []
+            return
         }
         
         let requestOptions = PHImageRequestOptions()
@@ -39,7 +45,7 @@ class PhotoUploadViewModel:ObservableObject{
             }
         }
         
-        return images
+        self.images = images
     }
     
 }

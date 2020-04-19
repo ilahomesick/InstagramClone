@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct TimeLineDetailView: View {
-    var model:TimeLineDetailViewModel
+    @ObservedObject var model:TimeLineDetailViewModel
 
     var body: some View {
         ScrollView{

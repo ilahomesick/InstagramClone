@@ -9,13 +9,16 @@
 import SwiftUI
 
 struct LineView: View {
-    //let model:LineViewViewModel
-    let images: [Image]
+    @ObservedObject var model:LineViewViewModel
+        
+    init(images: [Image]){
+           self.model = LineViewViewModel(images: images)
+       }
     
     var body: some View {
         HStack(spacing: 2){
-            ForEach(0..<images.count){ image in
-                PostPreviewView(image: self.images[image])
+            ForEach(0..<self.model.images.count){ image in
+                PostPreviewView(image: self.model.images[image])
             }
         }
     }

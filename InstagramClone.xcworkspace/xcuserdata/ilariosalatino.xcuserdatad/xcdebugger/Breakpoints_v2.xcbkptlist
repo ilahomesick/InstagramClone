@@ -7,360 +7,72 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "92411B2A-B356-4AB8-9E80-9C145A5C4EF1"
+            uuid = "503B8F3F-9210-4546-BC58-B742A835E109"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "InstagramClone/Network.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
-         <BreakpointContent
-            uuid = "4CD03372-0092-41F9-86CD-BCC8D4D13C96"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            scope = "0"
-            stopOnStyle = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.SwiftErrorBreakpoint">
-         <BreakpointContent
-            uuid = "22E95280-073F-4193-95D8-DB74814A3EF0"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
-         <BreakpointContent
-            uuid = "3AE920A6-7E36-43D2-A0A4-71CF60F126E0"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            scope = "1"
-            stopOnStyle = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
-         <BreakpointContent
-            uuid = "BADFFA47-EC53-4539-8C12-E358BFFAD7F8"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            scope = "1"
-            stopOnStyle = "1">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
-         <BreakpointContent
-            uuid = "9D0A6F7B-E4F6-4029-AB0B-25C6D7485EFB"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "Yes"
-            scope = "1"
-            stopOnStyle = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8D716075-552F-412A-A029-C0A7954DF463"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InstagramClone/AlertModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "AlertModel"
-            landmarkType = "14">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "809CB22B-7547-48BD-8E77-B3B51F0ADD5A"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InstagramClone/LoginView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "body"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "40E9DB48-7390-4FC1-A2A4-A914EE927A45"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InstagramClone/LoginView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "body"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A8812008-D106-4845-803D-717B60AB150C"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InstagramClone/LoginView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "A8812008-D106-4845-803D-717B60AB150C - 28d32243ff26476a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "InstagramClone.LoginView.body.getter : some"
-                  moduleName = "InstagramClone"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/LoginView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "668">
-               </Location>
-               <Location
-                  uuid = "A8812008-D106-4845-803D-717B60AB150C - 83b9e9408b242f2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; SwiftUI.Alert in InstagramClone.LoginView.body.getter : some"
-                  moduleName = "InstagramClone"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/LoginView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "60"
-                  endingLineNumber = "60"
-                  offsetFromSymbolStart = "131">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E07A0AF5-4A8C-407A-8C62-921A2603EC42"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InstagramClone/AlertPresentableViewModel.swift"
+            filePath = "InstagramClone/Models/SelectedImage.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "13"
             endingLineNumber = "13"
-            landmarkName = "alertModel"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "E07A0AF5-4A8C-407A-8C62-921A2603EC42 - 312c698098b9a2c1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "property wrapper backing initializer of InstagramClone.AlertPresentableViewModel.alertModel : InstagramClone.AlertModel"
-                  moduleName = "InstagramClone"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/AlertPresentableViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "28">
-               </Location>
-               <Location
-                  uuid = "E07A0AF5-4A8C-407A-8C62-921A2603EC42 - 408abd01c85d4e68"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "InstagramClone.AlertPresentableViewModel.alertModel.getter : InstagramClone.AlertModel"
-                  moduleName = "InstagramClone"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/AlertPresentableViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "205">
-               </Location>
-               <Location
-                  uuid = "E07A0AF5-4A8C-407A-8C62-921A2603EC42 - f219705714133a7c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "InstagramClone.AlertPresentableViewModel.alertModel.setter : InstagramClone.AlertModel"
-                  moduleName = "InstagramClone"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/AlertPresentableViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "188">
-               </Location>
-               <Location
-                  uuid = "E07A0AF5-4A8C-407A-8C62-921A2603EC42 - caac3109a881b6d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "InstagramClone.AlertPresentableViewModel.alertModel.modify : InstagramClone.AlertModel"
-                  moduleName = "InstagramClone"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/AlertPresentableViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "58">
-               </Location>
-               <Location
-                  uuid = "E07A0AF5-4A8C-407A-8C62-921A2603EC42 - 902fe3adfc01266"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "InstagramClone.AlertPresentableViewModel.alertModel.modify : InstagramClone.AlertModel with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "InstagramClone"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/AlertPresentableViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "40">
-               </Location>
-               <Location
-                  uuid = "E07A0AF5-4A8C-407A-8C62-921A2603EC42 - d1d71d135c47c8a4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "InstagramClone.AlertPresentableViewModel.$alertModel.getter : Combine.Published&lt;InstagramClone.AlertModel&gt;.Publisher"
-                  moduleName = "InstagramClone"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/AlertPresentableViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "110">
-               </Location>
-               <Location
-                  uuid = "E07A0AF5-4A8C-407A-8C62-921A2603EC42 - 26c322677fc75f1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "InstagramClone.AlertPresentableViewModel.init() -&gt; InstagramClone.AlertPresentableViewModel"
-                  moduleName = "InstagramClone"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/AlertPresentableViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "91">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A2C2E4CC-F8E7-4381-B092-07B7160CA13F"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InstagramClone/SignUpViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "SignUpViewModel"
+            landmarkName = "SelectedImage"
             landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "A2C2E4CC-F8E7-4381-B092-07B7160CA13F - 1da1aee12615c27c"
+                  uuid = "503B8F3F-9210-4546-BC58-B742A835E109 - 3cdf4c5b7ea33ec2"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "property wrapper backing initializer of InstagramClone.SignUpViewModel.alertModel : InstagramClone.AlertModel"
+                  symbolName = "property wrapper backing initializer of InstagramClone.SelectedImage.image : InstagramClone.UploadableImage"
                   moduleName = "InstagramClone"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/SignUpViewModel.swift"
+                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/Models/SelectedImage.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
                   endingLineNumber = "13"
-                  offsetFromSymbolStart = "28">
+                  offsetFromSymbolStart = "35">
                </Location>
                <Location
-                  uuid = "A2C2E4CC-F8E7-4381-B092-07B7160CA13F - e5f0d2b138c6f572"
+                  uuid = "503B8F3F-9210-4546-BC58-B742A835E109 - cd8014161d277d1b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "InstagramClone.SignUpViewModel.alertModel.getter : InstagramClone.AlertModel"
+                  symbolName = "InstagramClone.SelectedImage.image.getter : InstagramClone.UploadableImage"
                   moduleName = "InstagramClone"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/SignUpViewModel.swift"
+                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/Models/SelectedImage.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
                   endingLineNumber = "13"
-                  offsetFromSymbolStart = "205">
+                  offsetFromSymbolStart = "112">
                </Location>
                <Location
-                  uuid = "A2C2E4CC-F8E7-4381-B092-07B7160CA13F - 661696e50658b96e"
+                  uuid = "503B8F3F-9210-4546-BC58-B742A835E109 - 428c909974c97517"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "InstagramClone.SignUpViewModel.alertModel.setter : InstagramClone.AlertModel"
+                  symbolName = "InstagramClone.SelectedImage.image.setter : InstagramClone.UploadableImage"
                   moduleName = "InstagramClone"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/SignUpViewModel.swift"
+                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/Models/SelectedImage.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
                   endingLineNumber = "13"
-                  offsetFromSymbolStart = "182">
+                  offsetFromSymbolStart = "162">
                </Location>
                <Location
-                  uuid = "A2C2E4CC-F8E7-4381-B092-07B7160CA13F - 31499e7fd806871"
+                  uuid = "503B8F3F-9210-4546-BC58-B742A835E109 - 31126faa1f590b26"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "InstagramClone.SignUpViewModel.alertModel.modify : InstagramClone.AlertModel"
+                  symbolName = "InstagramClone.SelectedImage.image.modify : InstagramClone.UploadableImage"
                   moduleName = "InstagramClone"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/SignUpViewModel.swift"
+                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/Models/SelectedImage.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -368,14 +80,14 @@
                   offsetFromSymbolStart = "58">
                </Location>
                <Location
-                  uuid = "A2C2E4CC-F8E7-4381-B092-07B7160CA13F - c66d35fdb667ffc1"
+                  uuid = "503B8F3F-9210-4546-BC58-B742A835E109 - d48c1c7f71b7e8fa"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "InstagramClone.SignUpViewModel.alertModel.modify : InstagramClone.AlertModel with unmangled suffix &quot;.resume.0&quot;"
+                  symbolName = "InstagramClone.SelectedImage.image.modify : InstagramClone.UploadableImage with unmangled suffix &quot;.resume.0&quot;"
                   moduleName = "InstagramClone"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/SignUpViewModel.swift"
+                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/Models/SelectedImage.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -383,178 +95,127 @@
                   offsetFromSymbolStart = "40">
                </Location>
                <Location
-                  uuid = "A2C2E4CC-F8E7-4381-B092-07B7160CA13F - ed357a667dfad745"
+                  uuid = "503B8F3F-9210-4546-BC58-B742A835E109 - af559a3626ae4e7a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "InstagramClone.SignUpViewModel.$alertModel.getter : Combine.Published&lt;InstagramClone.AlertModel&gt;.Publisher"
+                  symbolName = "InstagramClone.SelectedImage.$image.getter : Combine.Published&lt;InstagramClone.UploadableImage&gt;.Publisher"
                   moduleName = "InstagramClone"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/SignUpViewModel.swift"
+                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/Models/SelectedImage.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
                   endingLineNumber = "13"
                   offsetFromSymbolStart = "110">
                </Location>
-               <Location
-                  uuid = "A2C2E4CC-F8E7-4381-B092-07B7160CA13F - d73a6a9707b6b88a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "InstagramClone.SignUpViewModel.init() -&gt; InstagramClone.SignUpViewModel"
-                  moduleName = "InstagramClone"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/SignUpViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "91">
-               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2BA95FF0-4BAA-45F9-B73D-21EAAD46DE14"
+            uuid = "BC6638BA-F893-417E-B9EB-16ACA55334D0"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "InstagramClone/SignUpView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "body"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E25FF0C6-7300-4CF7-B63C-64F176AC213B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InstagramClone/SignUpView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "body"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9417EA5A-9E61-40A9-B4C7-C443F05C988A"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InstagramClone/SignUpViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "signUp(username:password:email:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "9417EA5A-9E61-40A9-B4C7-C443F05C988A - 704f79983f21f3dc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;InstagramClone.SignUpUserMutation.Data&gt;, Swift.Error&gt;) -&gt; () in InstagramClone.SignUpViewModel.signUp(username: Swift.String, password: Swift.String, email: Swift.String) -&gt; ()"
-                  moduleName = "InstagramClone"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/SignUpViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "1469">
-               </Location>
-               <Location
-                  uuid = "9417EA5A-9E61-40A9-B4C7-C443F05C988A - 704f79983f21f3dc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;InstagramClone.SignUpUserMutation.Data&gt;, Swift.Error&gt;) -&gt; () in InstagramClone.SignUpViewModel.signUp(username: Swift.String, password: Swift.String, email: Swift.String) -&gt; ()"
-                  moduleName = "InstagramClone"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/SignUpViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "1481">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0DF23437-8361-4DB5-9F35-E6D1E9C10C00"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InstagramClone/AlertPresentableViewModel.swift"
+            filePath = "InstagramClone/Views/PhotoUploadView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
             endingLineNumber = "14"
-            landmarkName = "alertModel"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "ABFE4E73-611F-461D-B5B4-B333C3EEF211"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InstagramClone/LineView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "body"
-            landmarkType = "24">
+            landmarkName = "PhotoUploadView"
+            landmarkType = "14">
             <Locations>
                <Location
-                  uuid = "ABFE4E73-611F-461D-B5B4-B333C3EEF211 - 26c814c9b17bbb4a"
+                  uuid = "BC6638BA-F893-417E-B9EB-16ACA55334D0 - c87d8db8245a52ac"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, InstagramClone.PostPreviewView&gt; in InstagramClone.LineView.body.getter : some"
+                  symbolName = "property wrapper backing initializer of InstagramClone.PhotoUploadView.selectedImage : InstagramClone.SelectedImage"
                   moduleName = "InstagramClone"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/LineView.swift"
+                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/Views/PhotoUploadView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "28">
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "24">
                </Location>
                <Location
-                  uuid = "ABFE4E73-611F-461D-B5B4-B333C3EEF211 - 485a1141ec9357d3"
+                  uuid = "BC6638BA-F893-417E-B9EB-16ACA55334D0 - fb584f40855fa09d"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.String) -&gt; InstagramClone.PostPreviewView in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, InstagramClone.PostPreviewView&gt; in InstagramClone.LineView.body.getter : some"
+                  symbolName = "InstagramClone.PhotoUploadView.selectedImage.getter : InstagramClone.SelectedImage"
                   moduleName = "InstagramClone"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/LineView.swift"
+                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/Views/PhotoUploadView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "27">
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "55">
+               </Location>
+               <Location
+                  uuid = "BC6638BA-F893-417E-B9EB-16ACA55334D0 - 952acf0330e5f069"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InstagramClone.PhotoUploadView.selectedImage.setter : InstagramClone.SelectedImage"
+                  moduleName = "InstagramClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/Views/PhotoUploadView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "74">
+               </Location>
+               <Location
+                  uuid = "BC6638BA-F893-417E-B9EB-16ACA55334D0 - 3b5f73c31f3b049e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InstagramClone.PhotoUploadView.selectedImage.modify : InstagramClone.SelectedImage"
+                  moduleName = "InstagramClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/Views/PhotoUploadView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "14">
+               </Location>
+               <Location
+                  uuid = "BC6638BA-F893-417E-B9EB-16ACA55334D0 - e98fffbd3de70705"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InstagramClone.PhotoUploadView.selectedImage.modify : InstagramClone.SelectedImage with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "InstagramClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/Views/PhotoUploadView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "BC6638BA-F893-417E-B9EB-16ACA55334D0 - ecea4934032f42a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InstagramClone.PhotoUploadView.$selectedImage.getter : SwiftUI.ObservedObject&lt;InstagramClone.SelectedImage&gt;.Wrapper"
+                  moduleName = "InstagramClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/Views/PhotoUploadView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "107">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -562,15 +223,187 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A561A364-2572-40CF-989A-ADA30932ABAA"
+            uuid = "631AFFF1-7008-4EBE-985B-982A78F031AF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InstagramClone/Views/PhotoPickerGridView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "PhotoPickerGridView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "631AFFF1-7008-4EBE-985B-982A78F031AF - b5cbf2aca77d595f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of InstagramClone.PhotoPickerGridView.selectedImage : InstagramClone.SelectedImage"
+                  moduleName = "InstagramClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/Views/PhotoPickerGridView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "631AFFF1-7008-4EBE-985B-982A78F031AF - d247fcc26a3e3745"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InstagramClone.PhotoPickerGridView.selectedImage.getter : InstagramClone.SelectedImage"
+                  moduleName = "InstagramClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/Views/PhotoPickerGridView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "55">
+               </Location>
+               <Location
+                  uuid = "631AFFF1-7008-4EBE-985B-982A78F031AF - bd9895b9bc7e749"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InstagramClone.PhotoPickerGridView.selectedImage.setter : InstagramClone.SelectedImage"
+                  moduleName = "InstagramClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/Views/PhotoPickerGridView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "74">
+               </Location>
+               <Location
+                  uuid = "631AFFF1-7008-4EBE-985B-982A78F031AF - 5e06c3da9766eab8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InstagramClone.PhotoPickerGridView.selectedImage.modify : InstagramClone.SelectedImage"
+                  moduleName = "InstagramClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/Views/PhotoPickerGridView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "14">
+               </Location>
+               <Location
+                  uuid = "631AFFF1-7008-4EBE-985B-982A78F031AF - c331e31c3cbe77b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InstagramClone.PhotoPickerGridView.selectedImage.modify : InstagramClone.SelectedImage with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "InstagramClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/Views/PhotoPickerGridView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "631AFFF1-7008-4EBE-985B-982A78F031AF - 6bdedfef77c0fdd2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InstagramClone.PhotoPickerGridView.$selectedImage.getter : SwiftUI.ObservedObject&lt;InstagramClone.SelectedImage&gt;.Wrapper"
+                  moduleName = "InstagramClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/Views/PhotoPickerGridView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "107">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8A379F33-5BB4-4569-81BB-5FCED7F18530"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InstagramClone/Views/PhotoPickerGridView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "8A379F33-5BB4-4569-81BB-5FCED7F18530 - 5d38655b6e38f413"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ScrollView&lt;SwiftUI.VStack&lt;SwiftUI.ForEach&lt;Swift.Range&lt;Swift.Int&gt;, Swift.Int, InstagramClone.PhotoPickerLineView&gt;&gt;&gt; in InstagramClone.PhotoPickerGridView.body.getter : some"
+                  moduleName = "InstagramClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/Views/PhotoPickerGridView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  uuid = "8A379F33-5BB4-4569-81BB-5FCED7F18530 - 8ede86213e7250f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.VStack&lt;SwiftUI.ForEach&lt;Swift.Range&lt;Swift.Int&gt;, Swift.Int, InstagramClone.PhotoPickerLineView&gt;&gt; in closure #1 () -&gt; SwiftUI.ScrollView&lt;SwiftUI.VStack&lt;SwiftUI.ForEach&lt;Swift.Range&lt;Swift.Int&gt;, Swift.Int, InstagramClone.PhotoPickerLineView&gt;&gt;&gt; in InstagramClone.PhotoPickerGridView.body.getter : some"
+                  moduleName = "InstagramClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/Views/PhotoPickerGridView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "58">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "58FD4FA1-25E8-4401-97AE-A4CF2FB4157B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InstagramClone/Views/PhotoUploadView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CA33FE98-BC9B-42B5-8E59-7CADE030E163"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "InstagramClone/TimeLineView.swift"
+            filePath = "InstagramClone/Views/PhotoUploadView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "previews"
             landmarkType = "24">
          </BreakpointContent>
@@ -578,411 +411,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CD5DEBA5-FF08-4353-B21F-5B6A6EE3510F"
+            uuid = "5B5AE685-5F02-45A8-8FD3-A76FCCB5DC7D"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "InstagramClone/Views/BottomView.swift"
+            filePath = "InstagramClone/Views/PhotoPickerLineView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "body"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "previews"
             landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "CD5DEBA5-FF08-4353-B21F-5B6A6EE3510F - 81c355aec96faa02"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #5 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0)&gt; in InstagramClone.BottomView.body.getter : some"
-                  moduleName = "InstagramClone"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/Views/BottomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  uuid = "CD5DEBA5-FF08-4353-B21F-5B6A6EE3510F - 7bfd1f455bf83337"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #6 () -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0)&gt; in InstagramClone.BottomView.body.getter : some"
-                  moduleName = "InstagramClone"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/Views/BottomView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "55">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "390952FA-5E37-40AA-BA0D-7ED393C6F821"
+            uuid = "F389D169-4A24-4B23-8B01-02A5EAB044C9"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "InstagramClone/Views/ImagePicker.swift"
+            filePath = "InstagramClone/ViewModels/PhotoUploadViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "uploadImage(image:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7CEAF1B3-6CEC-43A6-834A-6E59CF6957FF"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InstagramClone/Views/ImagePicker.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "imagePickerControllerDidCancel(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1DF25466-BF0D-4615-A485-A8663E68A7C8"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InstagramClone/Views/ImagePicker.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "init(presentationMode:image:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A52E6DE8-A780-4100-B75B-CDC5C13D0DB7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InstagramClone/Views/ImagePicker.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "8"
-            endingLineNumber = "8"
-            landmarkName = "makeCoordinator()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "916BDA6B-AB87-44C0-836C-4DF962575321"
+            uuid = "727A4F15-44FE-4FBB-9E54-D4A7C07A0EFE"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "InstagramClone/ViewModels/SignUpViewModel.swift"
+            filePath = "InstagramClone/ViewModels/PhotoUploadViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "signUp(username:password:email:)"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "uploadImage(image:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "916BDA6B-AB87-44C0-836C-4DF962575321 - 6df9d24fbcfb76f4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;InstagramClone.NewPostMutation.Data&gt;, Swift.Error&gt;) -&gt; () in InstagramClone.SignUpViewModel.signUp(username: Swift.String, password: Swift.String, email: Swift.String) -&gt; ()"
-                  moduleName = "InstagramClone"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/ViewModels/SignUpViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "69">
-               </Location>
-               <Location
-                  uuid = "916BDA6B-AB87-44C0-836C-4DF962575321 - 6df9d24fbcfb76f4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;InstagramClone.NewPostMutation.Data&gt;, Swift.Error&gt;) -&gt; () in InstagramClone.SignUpViewModel.signUp(username: Swift.String, password: Swift.String, email: Swift.String) -&gt; ()"
-                  moduleName = "InstagramClone"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/ViewModels/SignUpViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "91">
-               </Location>
-               <Location
-                  uuid = "916BDA6B-AB87-44C0-836C-4DF962575321 - 6df9d24fbcfb76f4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;InstagramClone.NewPostMutation.Data&gt;, Swift.Error&gt;) -&gt; () in InstagramClone.SignUpViewModel.signUp(username: Swift.String, password: Swift.String, email: Swift.String) -&gt; ()"
-                  moduleName = "InstagramClone"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/ViewModels/SignUpViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "351">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CF58F3A3-ADCF-42BF-BAA6-CA67FEC28A57"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InstagramClone/ViewModels/SignUpViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "signUp(username:password:email:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "69CF0D4B-E2C8-4299-B6E8-4709D9DF1E5F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InstagramClone/ViewModels/SignUpViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "signUp(username:password:email:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "69CF0D4B-E2C8-4299-B6E8-4709D9DF1E5F - 6df9d24fbcfb76f4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;InstagramClone.NewPostMutation.Data&gt;, Swift.Error&gt;) -&gt; () in InstagramClone.SignUpViewModel.signUp(username: Swift.String, password: Swift.String, email: Swift.String) -&gt; ()"
-                  moduleName = "InstagramClone"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/ViewModels/SignUpViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "81">
-               </Location>
-               <Location
-                  uuid = "69CF0D4B-E2C8-4299-B6E8-4709D9DF1E5F - 6df9d24fbcfb76f4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;InstagramClone.NewPostMutation.Data&gt;, Swift.Error&gt;) -&gt; () in InstagramClone.SignUpViewModel.signUp(username: Swift.String, password: Swift.String, email: Swift.String) -&gt; ()"
-                  moduleName = "InstagramClone"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/ViewModels/SignUpViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "103">
-               </Location>
-               <Location
-                  uuid = "69CF0D4B-E2C8-4299-B6E8-4709D9DF1E5F - 6df9d24fbcfb76f4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;InstagramClone.NewPostMutation.Data&gt;, Swift.Error&gt;) -&gt; () in InstagramClone.SignUpViewModel.signUp(username: Swift.String, password: Swift.String, email: Swift.String) -&gt; ()"
-                  moduleName = "InstagramClone"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ilariosalatino/Desktop/InstagramClone/InstagramClone/ViewModels/SignUpViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "813">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CDF26A48-D68C-4EC9-A310-23636AE8165A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InstagramClone/ViewModels/SignUpViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "signUp(username:password:email:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C3D82A6C-6638-4D3F-9B96-A16F7CF201E7"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/InstagramClone-hcowueksuagmpgfzmbmwkvzxvvuv/SourcePackages/checkouts/apollo-ios/Sources/Apollo/HTTPNetworkTransport.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "457"
-            endingLineNumber = "457"
-            landmarkName = "upload(operation:files:completionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A425FC5D-D4B9-4DD1-83D9-D0E67DE2BB33"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/InstagramClone-hcowueksuagmpgfzmbmwkvzxvvuv/SourcePackages/checkouts/apollo-ios/Sources/ApolloWebSocket/SplitNetworkTransport.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "upload(operation:files:completionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EB8740AB-B0F3-489F-AA8C-587FC76A8CB6"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/InstagramClone-hcowueksuagmpgfzmbmwkvzxvvuv/SourcePackages/checkouts/apollo-ios/Sources/Apollo/HTTPNetworkTransport.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
-            landmarkName = "send(operation:isPersistedQueryRetry:files:completionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "444EC097-73D1-4D3E-AD46-AB941AD31241"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/InstagramClone-hcowueksuagmpgfzmbmwkvzxvvuv/SourcePackages/checkouts/apollo-ios/Sources/Apollo/ApolloClient.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "194"
-            endingLineNumber = "194"
-            landmarkName = "upload(operation:context:files:queue:resultHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "02057368-9814-49E0-B20C-E01A1D916463"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InstagramClone/ViewModels/SignUpViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "signUp(username:password:email:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "973E6434-A109-4EC8-88E3-DAD2220E9320"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InstagramClone/Views/PhotoUploadViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "retrievePics()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5626A026-7F42-4C2B-99FA-25864396F4A7"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InstagramClone/Views/PhotoUploadViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "retrievePics()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1820C2D6-6B6E-4DDA-ACFF-A9831D9D7AB3"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InstagramClone/Views/PhotoUploadViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "retrievePics()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
-         <BreakpointContent
-            uuid = "EE3A8E65-1FBB-406A-88F8-AE97AD6743F5"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            breakpointStackSelectionBehavior = "1"
-            scope = "1"
-            stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

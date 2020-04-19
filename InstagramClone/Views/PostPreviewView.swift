@@ -9,12 +9,16 @@
 import SwiftUI
 
 struct PostPreviewView: View {
-    let model = PostPreviewViewModel()
-    let image: Image
+    
+    @ObservedObject var model: PostPreviewViewModel
+    
+    init(image:Image){
+        self.model = PostPreviewViewModel(image: image)
+    }
     
     var body: some View {
         //Image(self.model.getImage())
-        self.image
+        self.model.image
         .resizable()
         .frame(width: 136, height: 136)
     }

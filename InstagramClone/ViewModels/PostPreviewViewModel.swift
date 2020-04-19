@@ -7,10 +7,16 @@
 //
 
 import Foundation
+import SwiftUI
 
-class PostPreviewViewModel{
+class PostPreviewViewModel:ObservableObject{
     
-    var postPreview: PostPreview? 
+    var postPreview: PostPreview?
+    var image: Image
+    
+    init(image: Image){
+        self.image = image
+    }
     
     func getImage()->String{
         return postPreview!.imageUrl

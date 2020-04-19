@@ -43,8 +43,18 @@
 		764748FF2434DD0900617680 /* PhotoUploadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764748FE2434DD0900617680 /* PhotoUploadViewModel.swift */; };
 		7661F048242229E900B46CB9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661F047242229E900B46CB9 /* API.swift */; };
 		7661F04A24222A4B00B46CB9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661F04924222A4B00B46CB9 /* SignUpView.swift */; };
+		766DEF5D243A223B007A9709 /* PhotoPickerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766DEF5C243A223B007A9709 /* PhotoPickerDetailView.swift */; };
+		766DEF5F243A2321007A9709 /* PhotoPickerDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766DEF5E243A2321007A9709 /* PhotoPickerDetailViewModel.swift */; };
 		767661B22420ECE400698563 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 767661B12420ECE400698563 /* Apollo */; };
 		767661B42420ECE400698563 /* ApolloCodegenLib in Frameworks */ = {isa = PBXBuildFile; productRef = 767661B32420ECE400698563 /* ApolloCodegenLib */; };
+		767A53072439FD6D00CB0FD4 /* PhotoPickerGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A53062439FD6D00CB0FD4 /* PhotoPickerGridView.swift */; };
+		767A5309243A011B00CB0FD4 /* PhotoPickerLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A5308243A011B00CB0FD4 /* PhotoPickerLineView.swift */; };
+		767A530B243A02A900CB0FD4 /* PhotoUploadPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A530A243A02A900CB0FD4 /* PhotoUploadPreviewView.swift */; };
+		767A530D243A037800CB0FD4 /* PhotoPickerGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A530C243A037800CB0FD4 /* PhotoPickerGridViewModel.swift */; };
+		767A530F243A061700CB0FD4 /* PhotoPickerLineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A530E243A061700CB0FD4 /* PhotoPickerLineViewModel.swift */; };
+		767A5311243A0AE600CB0FD4 /* TimeLineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A5310243A0AE600CB0FD4 /* TimeLineViewModel.swift */; };
+		769295B12448BDA00096F7F4 /* SelectedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769295B02448BDA00096F7F4 /* SelectedImage.swift */; };
+		76B62921244CCCFD006F62B6 /* UploadableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B62920244CCCFD006F62B6 /* UploadableImage.swift */; };
 		76BAE1F6241BA5F600FDEC8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BAE1F5241BA5F600FDEC8D /* AppDelegate.swift */; };
 		76BAE1F8241BA5F600FDEC8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BAE1F7241BA5F600FDEC8D /* SceneDelegate.swift */; };
 		76BAE1FA241BA5F600FDEC8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BAE1F9241BA5F600FDEC8D /* ContentView.swift */; };
@@ -94,6 +104,16 @@
 		764748FE2434DD0900617680 /* PhotoUploadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUploadViewModel.swift; sourceTree = "<group>"; };
 		7661F047242229E900B46CB9 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		7661F04924222A4B00B46CB9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		766DEF5C243A223B007A9709 /* PhotoPickerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerDetailView.swift; sourceTree = "<group>"; };
+		766DEF5E243A2321007A9709 /* PhotoPickerDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerDetailViewModel.swift; sourceTree = "<group>"; };
+		767A53062439FD6D00CB0FD4 /* PhotoPickerGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerGridView.swift; sourceTree = "<group>"; };
+		767A5308243A011B00CB0FD4 /* PhotoPickerLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerLineView.swift; sourceTree = "<group>"; };
+		767A530A243A02A900CB0FD4 /* PhotoUploadPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUploadPreviewView.swift; sourceTree = "<group>"; };
+		767A530C243A037800CB0FD4 /* PhotoPickerGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerGridViewModel.swift; sourceTree = "<group>"; };
+		767A530E243A061700CB0FD4 /* PhotoPickerLineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerLineViewModel.swift; sourceTree = "<group>"; };
+		767A5310243A0AE600CB0FD4 /* TimeLineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewModel.swift; sourceTree = "<group>"; };
+		769295B02448BDA00096F7F4 /* SelectedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedImage.swift; sourceTree = "<group>"; };
+		76B62920244CCCFD006F62B6 /* UploadableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadableImage.swift; sourceTree = "<group>"; };
 		76BAE1F2241BA5F600FDEC8D /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BAE1F5241BA5F600FDEC8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76BAE1F7241BA5F600FDEC8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +148,8 @@
 				760B7FB02431272600740D4A /* AlertModel.swift */,
 				76D4E4482430FABE00DF0EBD /* Response.swift */,
 				7621097124323B140073EC4D /* Comment.swift */,
+				769295B02448BDA00096F7F4 /* SelectedImage.swift */,
+				76B62920244CCCFD006F62B6 /* UploadableImage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -145,6 +167,10 @@
 				762109582432042E0073EC4D /* BaseResponseViewModel.swift */,
 				7621096324322E8B0073EC4D /* PostPreviewViewModel.swift */,
 				76210987243399390073EC4D /* TimeLineDetailViewModel.swift */,
+				767A530C243A037800CB0FD4 /* PhotoPickerGridViewModel.swift */,
+				767A530E243A061700CB0FD4 /* PhotoPickerLineViewModel.swift */,
+				767A5310243A0AE600CB0FD4 /* TimeLineViewModel.swift */,
+				766DEF5E243A2321007A9709 /* PhotoPickerDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -164,6 +190,10 @@
 				7621097D243387ED0073EC4D /* HomeView.swift */,
 				76210985243396AE0073EC4D /* TimeLineDetailView.swift */,
 				762109912434B2610073EC4D /* PhotoUploadView.swift */,
+				767A53062439FD6D00CB0FD4 /* PhotoPickerGridView.swift */,
+				767A5308243A011B00CB0FD4 /* PhotoPickerLineView.swift */,
+				767A530A243A02A900CB0FD4 /* PhotoUploadPreviewView.swift */,
+				766DEF5C243A223B007A9709 /* PhotoPickerDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -309,7 +339,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		76195A812420DBD100F744D0 /* Generate Apollo GraphQL API */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 8;
 			files = (
 			);
 			inputFileListPaths = (
@@ -321,7 +351,7 @@
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
 		};
@@ -335,11 +365,14 @@
 				76BAE1F6241BA5F600FDEC8D /* AppDelegate.swift in Sources */,
 				760B7FB12431272600740D4A /* AlertModel.swift in Sources */,
 				76210986243396AE0073EC4D /* TimeLineDetailView.swift in Sources */,
+				767A5309243A011B00CB0FD4 /* PhotoPickerLineView.swift in Sources */,
 				762109592432042E0073EC4D /* BaseResponseViewModel.swift in Sources */,
 				7621098224338E930073EC4D /* PostDetailView.swift in Sources */,
 				7621097E243387ED0073EC4D /* HomeView.swift in Sources */,
 				7621096224322DCE0073EC4D /* PostPreviewView.swift in Sources */,
 				760B7FAF2431250A00740D4A /* AlertPresentableViewModel.swift in Sources */,
+				766DEF5F243A2321007A9709 /* PhotoPickerDetailViewModel.swift in Sources */,
+				767A530F243A061700CB0FD4 /* PhotoPickerLineViewModel.swift in Sources */,
 				7623BAE3243117510048863F /* Colors.swift in Sources */,
 				7621096A243237610073EC4D /* Coordinator.swift in Sources */,
 				7621095C243212FA0073EC4D /* Session.swift in Sources */,
@@ -349,6 +382,7 @@
 				7661F04A24222A4B00B46CB9 /* SignUpView.swift in Sources */,
 				76210978243248010073EC4D /* ArrayExtension.swift in Sources */,
 				7621096624322FF40073EC4D /* LineView.swift in Sources */,
+				767A530D243A037800CB0FD4 /* PhotoPickerGridViewModel.swift in Sources */,
 				764748FF2434DD0900617680 /* PhotoUploadViewModel.swift in Sources */,
 				76210984243391980073EC4D /* PostViewModel.swift in Sources */,
 				762109922434B2610073EC4D /* PhotoUploadView.swift in Sources */,
@@ -356,8 +390,12 @@
 				7621095E2432218B0073EC4D /* ProfileView.swift in Sources */,
 				7661F048242229E900B46CB9 /* API.swift in Sources */,
 				76D4E4492430FABE00DF0EBD /* Response.swift in Sources */,
+				769295B12448BDA00096F7F4 /* SelectedImage.swift in Sources */,
 				7621096E24323A5F0073EC4D /* ProfileModel.swift in Sources */,
+				76B62921244CCCFD006F62B6 /* UploadableImage.swift in Sources */,
 				76210976243242660073EC4D /* TimeLineView.swift in Sources */,
+				767A530B243A02A900CB0FD4 /* PhotoUploadPreviewView.swift in Sources */,
+				767A53072439FD6D00CB0FD4 /* PhotoPickerGridView.swift in Sources */,
 				7621096024322D840073EC4D /* PostPreview.swift in Sources */,
 				76D4E443242FA03400DF0EBD /* SignUpViewModel.swift in Sources */,
 				76D4E4452430F1DB00DF0EBD /* Network.swift in Sources */,
@@ -365,7 +403,9 @@
 				76210968243232AF0073EC4D /* LineViewViewModel.swift in Sources */,
 				7621097224323B140073EC4D /* Comment.swift in Sources */,
 				7621098024338C8F0073EC4D /* StoryPreviewView.swift in Sources */,
+				767A5311243A0AE600CB0FD4 /* TimeLineViewModel.swift in Sources */,
 				76BAE1FA241BA5F600FDEC8D /* ContentView.swift in Sources */,
+				766DEF5D243A223B007A9709 /* PhotoPickerDetailView.swift in Sources */,
 				7621096424322E8B0073EC4D /* PostPreviewViewModel.swift in Sources */,
 				7623BAE1243117170048863F /* LoginView.swift in Sources */,
 				7623BADF2431170B0048863F /* LoginViewModel.swift in Sources */,

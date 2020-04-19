@@ -9,20 +9,19 @@
 import SwiftUI
 
 struct TimeLineView: View {
-    let images: [Image]
-    let lines: [[Image]]
+    
+    @ObservedObject var model: TimeLineViewModel
     
     init(images: [Image]){
-        self.images = images
-        self.lines = images.chunked(into: 3)
+        self.model = TimeLineViewModel(images: images)
     }
     
     var body: some View {
         ScrollView{
             VStack(alignment: .leading, spacing: 2){
-                ForEach(0..<lines.count) { line in
+                ForEach(0..<self.model.lines.count) { line in
                     
-                    LineView(images: self.lines[line])
+                    LineView(images: self.model.lines[line])
                     
                 }
         

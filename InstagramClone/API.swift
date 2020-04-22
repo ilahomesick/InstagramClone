@@ -8,10 +8,13 @@ public final class SignUpUserMutation: GraphQLMutation {
   /// The raw GraphQL definition of this operation.
   public let operationDefinition: String =
     """
-    mutation signUpUser($username: String!, $password: String!, $email: String!) {
-      signUp(fields: {username: $username, password: $password, email: $email}) {
+    mutation signUpUser($username: String!, $password: String!, $email: String) {
+      insert_User(objects: {username: $username, password: $password, email: $email}) {
         __typename
-        id
+        returning {
+          __typename
+          id
+        }
       }
     }
     """
@@ -20,9 +23,9 @@ public final class SignUpUserMutation: GraphQLMutation {
 
   public var username: String
   public var password: String
-  public var email: String
+  public var email: String?
 
-  public init(username: String, password: String, email: String) {
+  public init(username: String, password: String, email: String? = nil) {
     self.username = username
     self.password = password
     self.email = email
@@ -33,10 +36,10 @@ public final class SignUpUserMutation: GraphQLMutation {
   }
 
   public struct Data: GraphQLSelectionSet {
-    public static let possibleTypes: [String] = ["Mutation"]
+    public static let possibleTypes: [String] = ["mutation_root"]
 
     public static let selections: [GraphQLSelection] = [
-      GraphQLField("signUp", arguments: ["fields": ["username": GraphQLVariable("username"), "password": GraphQLVariable("password"), "email": GraphQLVariable("email")]], type: .nonNull(.object(SignUp.selections))),
+      GraphQLField("insert_User", arguments: ["objects": ["username": GraphQLVariable("username"), "password": GraphQLVariable("password"), "email": GraphQLVariable("email")]], type: .object(InsertUser.selections)),
     ]
 
     public private(set) var resultMap: ResultMap
@@ -45,26 +48,26 @@ public final class SignUpUserMutation: GraphQLMutation {
       self.resultMap = unsafeResultMap
     }
 
-    public init(signUp: SignUp) {
-      self.init(unsafeResultMap: ["__typename": "Mutation", "signUp": signUp.resultMap])
+    public init(insertUser: InsertUser? = nil) {
+      self.init(unsafeResultMap: ["__typename": "mutation_root", "insert_User": insertUser.flatMap { (value: InsertUser) -> ResultMap in value.resultMap }])
     }
 
-    /// The signUp mutation can be used to sign the user up.
-    public var signUp: SignUp {
+    /// insert data into the table: "User"
+    public var insertUser: InsertUser? {
       get {
-        return SignUp(unsafeResultMap: resultMap["signUp"]! as! ResultMap)
+        return (resultMap["insert_User"] as? ResultMap).flatMap { InsertUser(unsafeResultMap: $0) }
       }
       set {
-        resultMap.updateValue(newValue.resultMap, forKey: "signUp")
+        resultMap.updateValue(newValue?.resultMap, forKey: "insert_User")
       }
     }
 
-    public struct SignUp: GraphQLSelectionSet {
-      public static let possibleTypes: [String] = ["Viewer"]
+    public struct InsertUser: GraphQLSelectionSet {
+      public static let possibleTypes: [String] = ["User_mutation_response"]
 
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
-        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("returning", type: .nonNull(.list(.nonNull(.object(Returning.selections))))),
       ]
 
       public private(set) var resultMap: ResultMap
@@ -73,8 +76,8 @@ public final class SignUpUserMutation: GraphQLMutation {
         self.resultMap = unsafeResultMap
       }
 
-      public init(id: GraphQLID) {
-        self.init(unsafeResultMap: ["__typename": "Viewer", "id": id])
+      public init(returning: [Returning]) {
+        self.init(unsafeResultMap: ["__typename": "User_mutation_response", "returning": returning.map { (value: Returning) -> ResultMap in value.resultMap }])
       }
 
       public var __typename: String {
@@ -86,27 +89,64 @@ public final class SignUpUserMutation: GraphQLMutation {
         }
       }
 
-      /// This is the object id.
-      public var id: GraphQLID {
+      /// data of the affected rows by the mutation
+      public var returning: [Returning] {
         get {
-          return resultMap["id"]! as! GraphQLID
+          return (resultMap["returning"] as! [ResultMap]).map { (value: ResultMap) -> Returning in Returning(unsafeResultMap: value) }
         }
         set {
-          resultMap.updateValue(newValue, forKey: "id")
+          resultMap.updateValue(newValue.map { (value: Returning) -> ResultMap in value.resultMap }, forKey: "returning")
+        }
+      }
+
+      public struct Returning: GraphQLSelectionSet {
+        public static let possibleTypes: [String] = ["User"]
+
+        public static let selections: [GraphQLSelection] = [
+          GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+          GraphQLField("id", type: .nonNull(.scalar(Int.self))),
+        ]
+
+        public private(set) var resultMap: ResultMap
+
+        public init(unsafeResultMap: ResultMap) {
+          self.resultMap = unsafeResultMap
+        }
+
+        public init(id: Int) {
+          self.init(unsafeResultMap: ["__typename": "User", "id": id])
+        }
+
+        public var __typename: String {
+          get {
+            return resultMap["__typename"]! as! String
+          }
+          set {
+            resultMap.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var id: Int {
+          get {
+            return resultMap["id"]! as! Int
+          }
+          set {
+            resultMap.updateValue(newValue, forKey: "id")
+          }
         }
       }
     }
   }
 }
 
-public final class LogInUserMutation: GraphQLMutation {
+public final class LogInUserQuery: GraphQLQuery {
   /// The raw GraphQL definition of this operation.
   public let operationDefinition: String =
     """
-    mutation logInUser($username: String!, $password: String!) {
-      logIn(fields: {username: $username, password: $password}) {
+    query logInUser($username: String!, $password: String!) {
+      User(where: {username: {_eq: $username}, password: {_eq: $password}}) {
         __typename
-        sessionToken
+        id
       }
     }
     """
@@ -126,10 +166,10 @@ public final class LogInUserMutation: GraphQLMutation {
   }
 
   public struct Data: GraphQLSelectionSet {
-    public static let possibleTypes: [String] = ["Mutation"]
+    public static let possibleTypes: [String] = ["query_root"]
 
     public static let selections: [GraphQLSelection] = [
-      GraphQLField("logIn", arguments: ["fields": ["username": GraphQLVariable("username"), "password": GraphQLVariable("password")]], type: .nonNull(.object(LogIn.selections))),
+      GraphQLField("User", arguments: ["where": ["username": ["_eq": GraphQLVariable("username")], "password": ["_eq": GraphQLVariable("password")]]], type: .nonNull(.list(.nonNull(.object(User.selections))))),
     ]
 
     public private(set) var resultMap: ResultMap
@@ -138,26 +178,26 @@ public final class LogInUserMutation: GraphQLMutation {
       self.resultMap = unsafeResultMap
     }
 
-    public init(logIn: LogIn) {
-      self.init(unsafeResultMap: ["__typename": "Mutation", "logIn": logIn.resultMap])
+    public init(user: [User]) {
+      self.init(unsafeResultMap: ["__typename": "query_root", "User": user.map { (value: User) -> ResultMap in value.resultMap }])
     }
 
-    /// The logIn mutation can be used to log the user in.
-    public var logIn: LogIn {
+    /// fetch data from the table: "User"
+    public var user: [User] {
       get {
-        return LogIn(unsafeResultMap: resultMap["logIn"]! as! ResultMap)
+        return (resultMap["User"] as! [ResultMap]).map { (value: ResultMap) -> User in User(unsafeResultMap: value) }
       }
       set {
-        resultMap.updateValue(newValue.resultMap, forKey: "logIn")
+        resultMap.updateValue(newValue.map { (value: User) -> ResultMap in value.resultMap }, forKey: "User")
       }
     }
 
-    public struct LogIn: GraphQLSelectionSet {
-      public static let possibleTypes: [String] = ["Viewer"]
+    public struct User: GraphQLSelectionSet {
+      public static let possibleTypes: [String] = ["User"]
 
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
-        GraphQLField("sessionToken", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(Int.self))),
       ]
 
       public private(set) var resultMap: ResultMap
@@ -166,8 +206,8 @@ public final class LogInUserMutation: GraphQLMutation {
         self.resultMap = unsafeResultMap
       }
 
-      public init(sessionToken: String) {
-        self.init(unsafeResultMap: ["__typename": "Viewer", "sessionToken": sessionToken])
+      public init(id: Int) {
+        self.init(unsafeResultMap: ["__typename": "User", "id": id])
       }
 
       public var __typename: String {
@@ -179,188 +219,12 @@ public final class LogInUserMutation: GraphQLMutation {
         }
       }
 
-      /// The user session token
-      public var sessionToken: String {
+      public var id: Int {
         get {
-          return resultMap["sessionToken"]! as! String
-        }
-        set {
-          resultMap.updateValue(newValue, forKey: "sessionToken")
-        }
-      }
-    }
-  }
-}
-
-public final class LogOutUserMutation: GraphQLMutation {
-  /// The raw GraphQL definition of this operation.
-  public let operationDefinition: String =
-    """
-    mutation logOutUser {
-      logOut {
-        __typename
-        id
-      }
-    }
-    """
-
-  public let operationName: String = "logOutUser"
-
-  public init() {
-  }
-
-  public struct Data: GraphQLSelectionSet {
-    public static let possibleTypes: [String] = ["Mutation"]
-
-    public static let selections: [GraphQLSelection] = [
-      GraphQLField("logOut", type: .nonNull(.object(LogOut.selections))),
-    ]
-
-    public private(set) var resultMap: ResultMap
-
-    public init(unsafeResultMap: ResultMap) {
-      self.resultMap = unsafeResultMap
-    }
-
-    public init(logOut: LogOut) {
-      self.init(unsafeResultMap: ["__typename": "Mutation", "logOut": logOut.resultMap])
-    }
-
-    /// The logOut mutation can be used to log the user out.
-    public var logOut: LogOut {
-      get {
-        return LogOut(unsafeResultMap: resultMap["logOut"]! as! ResultMap)
-      }
-      set {
-        resultMap.updateValue(newValue.resultMap, forKey: "logOut")
-      }
-    }
-
-    public struct LogOut: GraphQLSelectionSet {
-      public static let possibleTypes: [String] = ["Viewer"]
-
-      public static let selections: [GraphQLSelection] = [
-        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
-        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
-      ]
-
-      public private(set) var resultMap: ResultMap
-
-      public init(unsafeResultMap: ResultMap) {
-        self.resultMap = unsafeResultMap
-      }
-
-      public init(id: GraphQLID) {
-        self.init(unsafeResultMap: ["__typename": "Viewer", "id": id])
-      }
-
-      public var __typename: String {
-        get {
-          return resultMap["__typename"]! as! String
-        }
-        set {
-          resultMap.updateValue(newValue, forKey: "__typename")
-        }
-      }
-
-      /// This is the object id.
-      public var id: GraphQLID {
-        get {
-          return resultMap["id"]! as! GraphQLID
+          return resultMap["id"]! as! Int
         }
         set {
           resultMap.updateValue(newValue, forKey: "id")
-        }
-      }
-    }
-  }
-}
-
-public final class NewPostMutation: GraphQLMutation {
-  /// The raw GraphQL definition of this operation.
-  public let operationDefinition: String =
-    """
-    mutation newPost($photo: Upload!) {
-      createFile(upload: $photo) {
-        __typename
-        url
-      }
-    }
-    """
-
-  public let operationName: String = "newPost"
-
-  public var photo: String
-
-  public init(photo: String) {
-    self.photo = photo
-  }
-
-  public var variables: GraphQLMap? {
-    return ["photo": photo]
-  }
-
-  public struct Data: GraphQLSelectionSet {
-    public static let possibleTypes: [String] = ["Mutation"]
-
-    public static let selections: [GraphQLSelection] = [
-      GraphQLField("createFile", arguments: ["upload": GraphQLVariable("photo")], type: .nonNull(.object(CreateFile.selections))),
-    ]
-
-    public private(set) var resultMap: ResultMap
-
-    public init(unsafeResultMap: ResultMap) {
-      self.resultMap = unsafeResultMap
-    }
-
-    public init(createFile: CreateFile) {
-      self.init(unsafeResultMap: ["__typename": "Mutation", "createFile": createFile.resultMap])
-    }
-
-    /// The create mutation can be used to create and upload a new file.
-    public var createFile: CreateFile {
-      get {
-        return CreateFile(unsafeResultMap: resultMap["createFile"]! as! ResultMap)
-      }
-      set {
-        resultMap.updateValue(newValue.resultMap, forKey: "createFile")
-      }
-    }
-
-    public struct CreateFile: GraphQLSelectionSet {
-      public static let possibleTypes: [String] = ["FileInfo"]
-
-      public static let selections: [GraphQLSelection] = [
-        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
-        GraphQLField("url", type: .nonNull(.scalar(String.self))),
-      ]
-
-      public private(set) var resultMap: ResultMap
-
-      public init(unsafeResultMap: ResultMap) {
-        self.resultMap = unsafeResultMap
-      }
-
-      public init(url: String) {
-        self.init(unsafeResultMap: ["__typename": "FileInfo", "url": url])
-      }
-
-      public var __typename: String {
-        get {
-          return resultMap["__typename"]! as! String
-        }
-        set {
-          resultMap.updateValue(newValue, forKey: "__typename")
-        }
-      }
-
-      /// This is the url in which the file can be downloaded.
-      public var url: String {
-        get {
-          return resultMap["url"]! as! String
-        }
-        set {
-          resultMap.updateValue(newValue, forKey: "url")
         }
       }
     }
@@ -371,33 +235,38 @@ public final class CreatePostMutation: GraphQLMutation {
   /// The raw GraphQL definition of this operation.
   public let operationDefinition: String =
     """
-    mutation createPost($photo: File, $description: String) {
-      createPost(fields: {description: $description, photo: $photo}) {
+    mutation createPost($description: String!, $photo: bytea!, $user: String!) {
+      insert_Post(objects: {description: $description, photo: $photo, user: $user}) {
         __typename
-        id
+        returning {
+          __typename
+          id
+        }
       }
     }
     """
 
   public let operationName: String = "createPost"
 
-  public var photo: String?
-  public var description: String?
+  public var description: String
+  public var photo: String
+  public var user: String
 
-  public init(photo: String? = nil, description: String? = nil) {
-    self.photo = photo
+  public init(description: String, photo: String, user: String) {
     self.description = description
+    self.photo = photo
+    self.user = user
   }
 
   public var variables: GraphQLMap? {
-    return ["photo": photo, "description": description]
+    return ["description": description, "photo": photo, "user": user]
   }
 
   public struct Data: GraphQLSelectionSet {
-    public static let possibleTypes: [String] = ["Mutation"]
+    public static let possibleTypes: [String] = ["mutation_root"]
 
     public static let selections: [GraphQLSelection] = [
-      GraphQLField("createPost", arguments: ["fields": ["description": GraphQLVariable("description"), "photo": GraphQLVariable("photo")]], type: .nonNull(.object(CreatePost.selections))),
+      GraphQLField("insert_Post", arguments: ["objects": ["description": GraphQLVariable("description"), "photo": GraphQLVariable("photo"), "user": GraphQLVariable("user")]], type: .object(InsertPost.selections)),
     ]
 
     public private(set) var resultMap: ResultMap
@@ -406,26 +275,26 @@ public final class CreatePostMutation: GraphQLMutation {
       self.resultMap = unsafeResultMap
     }
 
-    public init(createPost: CreatePost) {
-      self.init(unsafeResultMap: ["__typename": "Mutation", "createPost": createPost.resultMap])
+    public init(insertPost: InsertPost? = nil) {
+      self.init(unsafeResultMap: ["__typename": "mutation_root", "insert_Post": insertPost.flatMap { (value: InsertPost) -> ResultMap in value.resultMap }])
     }
 
-    /// The createPost mutation can be used to create a new object of the Post class.
-    public var createPost: CreatePost {
+    /// insert data into the table: "Post"
+    public var insertPost: InsertPost? {
       get {
-        return CreatePost(unsafeResultMap: resultMap["createPost"]! as! ResultMap)
+        return (resultMap["insert_Post"] as? ResultMap).flatMap { InsertPost(unsafeResultMap: $0) }
       }
       set {
-        resultMap.updateValue(newValue.resultMap, forKey: "createPost")
+        resultMap.updateValue(newValue?.resultMap, forKey: "insert_Post")
       }
     }
 
-    public struct CreatePost: GraphQLSelectionSet {
-      public static let possibleTypes: [String] = ["Post"]
+    public struct InsertPost: GraphQLSelectionSet {
+      public static let possibleTypes: [String] = ["Post_mutation_response"]
 
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
-        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("returning", type: .nonNull(.list(.nonNull(.object(Returning.selections))))),
       ]
 
       public private(set) var resultMap: ResultMap
@@ -434,8 +303,8 @@ public final class CreatePostMutation: GraphQLMutation {
         self.resultMap = unsafeResultMap
       }
 
-      public init(id: GraphQLID) {
-        self.init(unsafeResultMap: ["__typename": "Post", "id": id])
+      public init(returning: [Returning]) {
+        self.init(unsafeResultMap: ["__typename": "Post_mutation_response", "returning": returning.map { (value: Returning) -> ResultMap in value.resultMap }])
       }
 
       public var __typename: String {
@@ -447,13 +316,50 @@ public final class CreatePostMutation: GraphQLMutation {
         }
       }
 
-      /// This is the object id.
-      public var id: GraphQLID {
+      /// data of the affected rows by the mutation
+      public var returning: [Returning] {
         get {
-          return resultMap["id"]! as! GraphQLID
+          return (resultMap["returning"] as! [ResultMap]).map { (value: ResultMap) -> Returning in Returning(unsafeResultMap: value) }
         }
         set {
-          resultMap.updateValue(newValue, forKey: "id")
+          resultMap.updateValue(newValue.map { (value: Returning) -> ResultMap in value.resultMap }, forKey: "returning")
+        }
+      }
+
+      public struct Returning: GraphQLSelectionSet {
+        public static let possibleTypes: [String] = ["Post"]
+
+        public static let selections: [GraphQLSelection] = [
+          GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+          GraphQLField("id", type: .nonNull(.scalar(String.self))),
+        ]
+
+        public private(set) var resultMap: ResultMap
+
+        public init(unsafeResultMap: ResultMap) {
+          self.resultMap = unsafeResultMap
+        }
+
+        public init(id: String) {
+          self.init(unsafeResultMap: ["__typename": "Post", "id": id])
+        }
+
+        public var __typename: String {
+          get {
+            return resultMap["__typename"]! as! String
+          }
+          set {
+            resultMap.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var id: String {
+          get {
+            return resultMap["id"]! as! String
+          }
+          set {
+            resultMap.updateValue(newValue, forKey: "id")
+          }
         }
       }
     }

@@ -12,13 +12,13 @@ class LoginViewModel: AlertPresentableViewModel{
     
     func logIn(username:String, password: String){
         // Perform the LogInUser mutation, passing the parameters we just got from our TextFields
-        Network.shared.apollo.perform(mutation: LogInUserMutation(username: username, password: password)){ result in
+        Network.shared.apollo.fetch(query: LogInUserQuery(username: username, password: password)){ result in
             // Let's switch the result so we can separate a successful one from an error
             switch result {
             // In case of success
             case .success(let graphQLResult):
                 // We try to parse our result
-                if let sessionToken = graphQLResult.data?.logIn.sessionToken {
+                if let sessionToken = graphQLResult.data?.user.description {
                     self.response = Response(success: true, message: sessionToken)
                     
                     // Write the sessionToken to our Keychain

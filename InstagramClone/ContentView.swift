@@ -13,8 +13,8 @@ struct ContentView: View {
              //SignUpView()
         //LoginView()
         //ProfileView(model: ProfileViewModel())
-        //HomeView()
-        PhotoUploadView()
+        HomeView()
+        //PhotoUploadView()
         }
 }
 

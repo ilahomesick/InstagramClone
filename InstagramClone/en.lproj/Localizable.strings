@@ -14,3 +14,6 @@
 "profile_following" = "Following";
 "profile_followers" = "Followers";
 "app_name" = "Instagram Clone";
+"photo_upload_next" = "Next";
+"new_post_placeholder" = "Write a caption...";
+"new_post_share" = "Share";

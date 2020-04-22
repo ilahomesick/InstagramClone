@@ -7,5 +7,7 @@ target 'InstagramClone' do
 
   # Pods for InstagramClone
 
+pod 'AWSS3SDKVersion'
+pod 'AWSCognito'
 
 end

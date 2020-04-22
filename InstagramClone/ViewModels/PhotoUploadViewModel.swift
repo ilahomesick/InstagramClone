@@ -49,29 +49,6 @@ class PhotoUploadViewModel:ObservableObject{
         self.images = images
     }
     
-    func uploadImage(image:SelectedImage){
-        let file = GraphQLFile(fieldName: "photo", originalName: "post", mimeType: "image/jpeg", data: image.image.uiImage.jpegData(compressionQuality: 0.5)!)
-        
-        Network.shared.apollo.upload(operation: NewPostMutation(photo: "post"), // <-- `Upload` is a custom scalar that's a `String` under the hood.
-        files: [file]) { result in
-            switch result {
-            case .success(let graphQLResult):
-                Network.shared.apollo.perform(mutation: CreatePostMutation(photo:graphQLResult.data?.createFile.url, description: "")){ result in
-                    switch result {
-                    case .success(let graphQLResult):
-                        print()
-                    //\(graphQLResult.data?.singleUpload.id)")
-                    case .failure(let error):
-                        print("error: \(error)")
-                    }
-                }
-            //\(graphQLResult.data?.singleUpload.id)")
-            case .failure(let error):
-                print("error: \(error)")
-            }
-        }
-    }
-    
     func getUiImage(index: Int)-> UIImage{
         return images[index].uiImage
     }

@@ -13,15 +13,15 @@ struct BottomView: View {
     
     var body: some View {
         HStack{
-             Button(action: {}){
-                 Image("home")
+             NavigationLink(destination: HomeView()){
+                Image("home")
                  .resizable()
                  .frame(width: 30, height: 30)
              }.padding()
              
              Spacer()
              
-             Button(action: {}){
+             NavigationLink(destination: HomeView()){
                  Image("search")
                  .resizable()
                  .frame(width: 30, height: 30)
@@ -29,9 +29,7 @@ struct BottomView: View {
              
              Spacer()
              
-            Button(action: {
-               
-            }){
+            NavigationLink(destination:PhotoUploadView()){
                  Image("plus")
                  .resizable()
                  .frame(width: 30, height: 30)
@@ -39,7 +37,7 @@ struct BottomView: View {
              
              Spacer()
              
-             Button(action: {}){
+             NavigationLink(destination:HomeView()){
                  Image("heart")
                  .resizable()
                  .frame(width: 30, height: 30)
@@ -47,7 +45,7 @@ struct BottomView: View {
              
              Spacer()
              
-             Button(action: {}){
+             NavigationLink(destination:ProfileView(model: ProfileViewModel())){
                  Image("profile")
                  .resizable()
                  .frame(width: 30, height: 30)

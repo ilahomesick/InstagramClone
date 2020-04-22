@@ -1,22 +1,20 @@
-mutation signUpUser($username: String!, $password: String!, $email: String!) {
-  signUp(fields: { username: $username, password: $password, email: $email }) {
-    id
+mutation signUpUser($username: String!, $password: String!, $email: String) {
+  insert_User(objects: { username: $username, password: $password, email: $email }) {
+      returning {
+        id
+      }
+  }
+}
+query logInUser($username: String!, $password: String!){
+    User(where: {username: {_eq: $username}, password: {_eq: $password}}){
+        id
+    }
+}
+mutation createPost($description: String!, $photo: bytea!, $user: String!) {
+  insert_Post(objects: {description:$description, photo:$photo, user: $user}) {
+    returning {
+      id
+    }
   }
 }
 
-mutation logInUser($username: String!, $password: String!){
-    logIn(fields: {username: $username, password: $password}){
-      sessionToken
-    }
-}
-mutation logOutUser{
-    logOut{id}
-}
-mutation newPost($photo:Upload!){
-  createFile(upload: $photo){
-    url
-  }  
-}
-mutation createPost($photo:File,$description:String){
-  createPost(fields:{description:$description, photo: $photo}){id}
-}

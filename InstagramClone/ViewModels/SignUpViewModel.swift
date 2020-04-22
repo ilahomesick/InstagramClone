@@ -14,32 +14,19 @@ class SignUpViewModel: AlertPresentableViewModel{
     
     func signUp(username: String, password:String, email: String){
         
-        
-        
-        guard
-            let fileURL = Bundle.main.url(forResource: "home",
-                                          withExtension: "png"),
-            let file = GraphQLFile(fieldName: "photo",
-                                   originalName: "home.png",
-                                   mimeType: "image/png", // <-defaults to "application/octet-stream"
-                fileURL: fileURL) else {
-                    // Either the file URL couldn't be created or the file couldn't be created.
-                    return
-        }
-        
-        Network.shared.apollo.upload(operation: NewPostMutation(photo: "home"), // <-- `Upload` is a custom scalar that's a `String` under the hood.
-        files: [file]) { result in
+        Network.shared.apollo.perform(mutation: SignUpUserMutation(username: username, password: password)) { result in
             switch result {
             case .success(let graphQLResult):
-                Network.shared.apollo.perform(mutation: CreatePostMutation(photo:graphQLResult.data?.createFile.url, description: "")){ result in
-                    switch result {
-                    case .success(let graphQLResult):
-                        print()
-                    //\(graphQLResult.data?.singleUpload.id)")
-                    case .failure(let error):
-                        print("error: \(error)")
+                if let sessionToken = graphQLResult.data?.insertUser?.jsonObject["id"] {
+                    self.response = Response(success: true, message: sessionToken as! String)
+                        
                     }
-                }
+                        // but in case of any GraphQL errors we present that message
+                    else if let errors = graphQLResult.errors {
+                        // GraphQL errors
+                        
+                        self.alertModel = AlertModel(message: errors.description, show: true)
+                    }
             //\(graphQLResult.data?.singleUpload.id)")
             case .failure(let error):
                 print("error: \(error)")

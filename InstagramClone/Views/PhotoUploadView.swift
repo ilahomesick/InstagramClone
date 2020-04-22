@@ -20,22 +20,13 @@ struct PhotoUploadView: View {
     
     var body: some View {
         
-        VStack{
-            HStack{
-                NavigationLink(destination: HomeView()) { Text("Cancel").padding()
-                    Spacer()
-            }
-                Button(action: {
-                    self.model.uploadImage(image: self.selectedImage)
-                }) {
-                    Text("Next")
-                }.padding()
-            }
-                Section{
-                    Image(uiImage:self.selectedImage.image.uiImage).resizable()
-                PhotoPickerGridView(images: self.model.images, selectedImage:self.selectedImage)
-                }
-            }
+            VStack{
+            Image(uiImage:self.selectedImage.image.uiImage).resizable()
+            PhotoPickerGridView(images: self.model.images, selectedImage:self.selectedImage)
+            }.navigationBarItems(trailing: NavigationLink(destination: NewPostView(selectedImage: self.selectedImage)){
+                Text(NSLocalizedString("photo_upload_next", comment: ""))
+            })
+            
     }
 }
 

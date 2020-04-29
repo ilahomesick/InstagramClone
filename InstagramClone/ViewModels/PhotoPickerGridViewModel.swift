@@ -8,10 +8,12 @@
 
 import Foundation
 import SwiftUI
+import Combine
 
 class PhotoPickerGridViewModel:ObservableObject{
     let images: [UploadableImage]
     let lines: [[UploadableImage]]
+    
     
     init(images: [UploadableImage]){
         self.images = images

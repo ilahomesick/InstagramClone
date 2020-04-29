@@ -25,7 +25,7 @@ struct PostDetailView: View {
                 
                 VStack(alignment: .leading){
                     Text(self.model.getUser()).font(.headline).foregroundColor(Colors.lightBlueColor)
-                    Text("Text downside").foregroundColor(Color(.lightGray)).font(.subheadline)
+                    Text(self.model.getDate()).foregroundColor(Color(.lightGray)).font(.subheadline)
                 }
                 
                 Spacer()
@@ -38,7 +38,7 @@ struct PostDetailView: View {
                 .padding(.trailing, 5)
             }
             
-            Image(self.model.getImage())
+            self.model.getImage()
             .resizable()
             .frame(width: 415, height: 415)
             
@@ -80,6 +80,6 @@ struct PostDetailView: View {
 
 struct PostDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        PostDetailView(model: PostViewModel(post: Post(image: "ic_logo", description: "", comments: [], date: "", id: 1, username: "Ilario")))
+        PostDetailView(model: PostViewModel(post: Post(post: RetrievePostQuery.Data.Post(imageUrl: "877BE21F-F83A-41BC-9FA4-F80CB75B3728-10597-00000D8386F28FF6.jpeg",description: "ciao", date: "", user: "Ilario"), image: Image("ic-logo"))))
     }
 }

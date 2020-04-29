@@ -10,22 +10,16 @@ import Foundation
 import AWSCognito
 import AWSS3
 import AWSCore
+import SwiftUI
 
 typealias completionBlock = (_ response: Any?, _ error: Error?) -> Void
 
 class ImageUpload{
     // Inizializza il provider di credenziali Amazon Cognito
     
-    init() {
-        let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.EUCentral1,
-           identityPoolId:"eu-central-1:3ef174ab-15af-49a0-8e96-bdbcc48659bb")
-
-        let configuration = AWSServiceConfiguration(region:.EUCentral1, credentialsProvider:credentialsProvider)
-
-        AWSServiceManager.default().defaultServiceConfiguration = configuration
-    }
     
     func uploadImage(image:SelectedImage,completion: completionBlock?){
+        
         guard let data = image.image.uiImage.jpegData(compressionQuality: 0.5) else {
             let error = NSError(domain:"", code:402, userInfo:[NSLocalizedDescriptionKey: "invalid image"])
             return
@@ -56,7 +50,7 @@ class ImageUpload{
                     let publicURL = url?.appendingPathComponent("ilariosalatino").appendingPathComponent(fileName)
                     print("Uploaded to:\(String(describing: publicURL))")
                     if let completionBlock = completion {
-                        completionBlock(publicURL?.absoluteString, nil)
+                        completionBlock(fileName, nil)
                     }
                 } else {
                     if let completionBlock = completion {

@@ -11,10 +11,10 @@ import SwiftUI
 
 class LineViewViewModel: ObservableObject{
     
-    let images: [Image]
+    let posts: [Post]
     
-    init(images: [Image]){
-        self.images = images
+    init(posts: [Post]){
+        self.posts = posts
     }
     
 }

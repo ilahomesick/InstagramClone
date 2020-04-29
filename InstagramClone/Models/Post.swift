@@ -7,14 +7,35 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct Post{
+class Post{
     
-    var image: String
+    var image: Image = Image("ic_logo")
     var description: String
-    var comments: [Comment]
+    var comments: [Comment]?
     var date: String
-    var id: Int
+    var id: Int?
     var username: String
+    
+    init(post:RetrievePostQuery.Data.Post, image: Image){
+        self.description = post.description
+        self.date = post.date
+        self.username = post.user
+        
+    }
+    
+    func retrieveImage(key:String){
+        ImageDownload().downloadImage(key: key, completion: { result, error in
+            if (error == nil){
+                self.image = Image(uiImage: UIImage(data: result as! Data)!)
+            }else{
+                print(error)
+            }
+        })
+        
+    }
+    
+    
     
 }

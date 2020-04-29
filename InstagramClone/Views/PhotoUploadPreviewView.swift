@@ -11,8 +11,8 @@ import SwiftUI
 struct PhotoUploadPreviewView: View {
     @ObservedObject var model: PostPreviewViewModel
     
-    init(image: Image){
-        self.model = PostPreviewViewModel(image: image)
+    init(post: Post){
+        self.model = PostPreviewViewModel(post: post)
     }
     
     var body: some View {
@@ -20,7 +20,7 @@ struct PhotoUploadPreviewView: View {
         //GeometryReader{geometry in
         VStack{
             
-                self.model.image
+            self.model.getImage()
                     .resizable().frame(width: 103.5, height: 103.5, alignment: .leading)
         }
         
@@ -29,6 +29,6 @@ struct PhotoUploadPreviewView: View {
 
 struct PhotoUploadPreviewView_Previews: PreviewProvider {
     static var previews: some View {
-        PhotoUploadPreviewView(image: Image("ic_logo"))
+        PhotoUploadPreviewView(post: Post(post: RetrievePostQuery.Data.Post(imageUrl: "877BE21F-F83A-41BC-9FA4-F80CB75B3728-10597-00000D8386F28FF6.jpeg",description: "ciao", date: "", user: "Ilario"), image: Image("ic-logo")))
     }
 }

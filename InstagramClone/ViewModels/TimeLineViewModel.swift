@@ -10,13 +10,13 @@ import Foundation
 import SwiftUI
 
 class TimeLineViewModel:ObservableObject{
-    let images: [Image]
-    let lines: [[Image]]
+    let posts: [Post]
+    let lines: [[Post]]
     
-    init(images: [Image]){
-        self.images = images
-        self.lines = images.chunked(into: 3)
-    }
+        init(posts: [Post]){
+            self.posts = posts
+            self.lines = posts.chunked(into: 3)
+        }
     
     
     

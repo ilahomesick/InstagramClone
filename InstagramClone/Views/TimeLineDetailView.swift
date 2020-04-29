@@ -14,7 +14,7 @@ struct TimeLineDetailView: View {
     var body: some View {
         ScrollView{
             VStack(alignment: .leading, spacing: 2){
-                ForEach(self.model.retrievePosts(), id: \.id) { post in
+                ForEach(self.model.posts, id: \.id) { post in
                     PostDetailView(model: PostViewModel(post: post)).padding(.bottom, 20)
                 }
             }

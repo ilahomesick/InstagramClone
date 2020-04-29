@@ -11,32 +11,18 @@ import SwiftUI
 
 class PostPreviewViewModel:ObservableObject{
     
-    var postPreview: PostPreview?
-    var image: Image
+    var post: Post
     
-    init(image: Image){
-        self.image = image
+    init(post: Post){
+        self.post = post
     }
     
-    func getImage()->String{
-        return postPreview!.imageUrl
+    func getImage()->Image{
+        return post.image
     }
     
-    func getPreviews()->[PostPreview]{
+    func getPreviews()->[Post]{
         return [
-            PostPreview(id: 0, imageUrl: "1"),
-            PostPreview(id: 1, imageUrl: "2"),
-            PostPreview(id: 2, imageUrl: "3"),
-            PostPreview(id: 3, imageUrl: "4"),
-            PostPreview(id: 4, imageUrl: "5"),
-            PostPreview(id: 5, imageUrl: "6"),
-            PostPreview(id: 6, imageUrl: "7"),
-            PostPreview(id: 7, imageUrl: "8"),
-            PostPreview(id: 8, imageUrl: "9"),
-            PostPreview(id: 9, imageUrl: "10"),
-            PostPreview(id: 10, imageUrl: "11"),
-            PostPreview(id: 11, imageUrl: "12"),
-            PostPreview(id: 12, imageUrl: "13")
         ]
     }
     

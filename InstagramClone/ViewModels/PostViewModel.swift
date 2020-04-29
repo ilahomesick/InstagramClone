@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 class PostViewModel{
     var post:Post
@@ -15,11 +16,20 @@ class PostViewModel{
         self.post = post
     }
     
-    func getImage()->String{
+    func getImage()->Image{
         return post.image
     }
     
     func getUser()-> String{
         return post.username
     }
+    
+    func getDescription()->String{
+        return post.description
+    }
+    
+    func getDate()->String{
+        return post.date
+    }
+    
 }

@@ -105,19 +105,21 @@ struct ProfileView: View {
                 
                 Divider()
                 
-                TimeLineView(images: [Image("ic_logo"), Image("ic_logo"), Image("ic_logo"), Image("ic_logo")]).padding(.leading, 10)
+                TimeLineView(posts: self.model.profile.posts).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
                 
                 Divider()
                                 
-                BottomView()
+                
                 
             }
+        }.onAppear{
+            self.model.getImages()
         }
     }
 }
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView(model: ProfileViewModel())
+        ProfileView(model: ProfileViewModel(username: "Ilario"))
     }
 }

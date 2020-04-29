@@ -13,6 +13,7 @@ struct NewPostView: View {
     var selectedImage: SelectedImage
     @State var text: String = ""
     var placeholder: String =  NSLocalizedString("new_post_caption", comment: "")
+    @Environment(\.presentationMode) private var presentationMode
     
     var body: some View {
         ScrollView{
@@ -27,6 +28,10 @@ struct NewPostView: View {
             {
                 Text(NSLocalizedString("new_post_share", comment: ""))
             })
+        }.onReceive(model.viewDismissalModePublisher) { shouldDismiss in
+            if shouldDismiss {
+                self.presentationMode.wrappedValue.dismiss()
+            }
         }
     }
 }

@@ -12,13 +12,12 @@ struct PostPreviewView: View {
     
     @ObservedObject var model: PostPreviewViewModel
     
-    init(image:Image){
-        self.model = PostPreviewViewModel(image: image)
+    init(post:Post){
+        self.model = PostPreviewViewModel(post: post)
     }
     
     var body: some View {
-        //Image(self.model.getImage())
-        self.model.image
+        self.model.getImage()
         .resizable()
         .frame(width: 136, height: 136)
     }
@@ -26,6 +25,6 @@ struct PostPreviewView: View {
 
 struct PostPreviewView_Previews: PreviewProvider {
     static var previews: some View {
-        PostPreviewView(image: Image("ic_logo"))
+        PostPreviewView(post: Post(post: RetrievePostQuery.Data.Post(imageUrl: "877BE21F-F83A-41BC-9FA4-F80CB75B3728-10597-00000D8386F28FF6.jpeg",description: "ciao", date: "", user: "Ilario"), image: Image("ic-logo")))
     }
 }

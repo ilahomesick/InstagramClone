@@ -45,7 +45,7 @@ struct BottomView: View {
              
              Spacer()
              
-             NavigationLink(destination:ProfileView(model: ProfileViewModel())){
+            NavigationLink(destination:ProfileView(model: ProfileViewModel(username: "Ilario"))){
                  Image("profile")
                  .resizable()
                  .frame(width: 30, height: 30)

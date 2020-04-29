@@ -11,14 +11,14 @@ import SwiftUI
 struct LineView: View {
     @ObservedObject var model:LineViewViewModel
         
-    init(images: [Image]){
-           self.model = LineViewViewModel(images: images)
+    init(posts: [Post]){
+           self.model = LineViewViewModel(posts: posts)
        }
     
     var body: some View {
         HStack(spacing: 2){
-            ForEach(0..<self.model.images.count){ image in
-                PostPreviewView(image: self.model.images[image])
+            ForEach(0..<self.model.posts.count){ post in
+                PostPreviewView(post: self.model.posts[post])
             }
         }
     }
@@ -26,6 +26,6 @@ struct LineView: View {
 
 struct LineView_Previews: PreviewProvider {
     static var previews: some View {
-        LineView( images: [Image("ic_logo"), Image("ic_logo"), Image("ic_logo")])
+        LineView( posts: [Post(post: RetrievePostQuery.Data.Post(imageUrl: "877BE21F-F83A-41BC-9FA4-F80CB75B3728-10597-00000D8386F28FF6.jpeg",description: "ciao", date: "", user: "Ilario"), image: Image("ic-logo"))])
     }
 }

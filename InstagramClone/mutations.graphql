@@ -10,11 +10,27 @@ query logInUser($username: String!, $password: String!){
         id
     }
 }
-mutation createPost($description: String!, $photo: bytea!, $user: String!) {
-  insert_Post(objects: {description:$description, photo:$photo, user: $user}) {
+mutation createPost($description: String!, $photo: String!, $user: String!) {
+  insert_Post(objects: {description:$description, imageUrl:$photo, user: $user}) {
     returning {
       id
     }
   }
 }
+
+query retrievePost($username: String) {
+  Post(where: {user: {_eq: $username}}){
+    imageUrl
+    description
+    date
+    user
+  }
+}
+
+query retrieveFollowers($username: String) {
+  followings(where: {followee: {_eq: $username}}) {
+    follower
+  }
+}
+
 

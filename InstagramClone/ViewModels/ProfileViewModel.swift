@@ -7,17 +7,17 @@
 //
 
 import Foundation
+import SwiftUI
 
 class ProfileViewModel{
     
-    var profileModel:ProfileModel?
+    var profile:Profile
     
-    func getImages(){
-        let posts = profileModel?.posts
-        var images = [String]()
-        for post in posts!{
-            images.append(post.image)
-        }
+    init(username:String){
+        self.profile = Profile(username: username)
     }
     
+    func getImages(){
+        
+    }
 }

@@ -12,8 +12,8 @@ struct TimeLineView: View {
     
     @ObservedObject var model: TimeLineViewModel
     
-    init(images: [Image]){
-        self.model = TimeLineViewModel(images: images)
+    init(posts: [Post]){
+        self.model = TimeLineViewModel(posts: posts)
     }
     
     var body: some View {
@@ -21,9 +21,11 @@ struct TimeLineView: View {
             VStack(alignment: .leading, spacing: 2){
                 ForEach(0..<self.model.lines.count) { line in
                     
-                    LineView(images: self.model.lines[line])
-                    
+                    LineView(posts: self.model.lines[line])
+                        
                 }
+                .scaledToFill()
+                
         
             }
         }
@@ -33,6 +35,7 @@ struct TimeLineView: View {
 
 struct TimeLineView_Previews: PreviewProvider {
     static var previews: some View {
-        TimeLineView(images: [Image("ic_logo"), Image("ic_logo"), Image("ic_logo"), Image("ic_logo"), Image("ic_logo"), Image("ic_logo"), Image("ic_logo"), Image("ic_logo")])
+//        TimeLineView(images: [Image("ic_logo"), Image("ic_logo"), Image("ic_logo"), Image("ic_logo"), Image("ic_logo"), Image("ic_logo"), Image("ic_logo"), Image("ic_logo")])
+        TimeLineView(posts: [Post(post: RetrievePostQuery.Data.Post(imageUrl: "877BE21F-F83A-41BC-9FA4-F80CB75B3728-10597-00000D8386F28FF6.jpeg",description: "ciao", date: "", user: "Ilario"), image: Image("ic-logo"))])
     }
 }

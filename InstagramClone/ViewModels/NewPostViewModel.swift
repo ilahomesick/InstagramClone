@@ -9,8 +9,16 @@
 import Foundation
 import SwiftUI
 import Apollo
+import Combine
 
 class NewPostViewModel{
+    
+    var viewDismissalModePublisher = PassthroughSubject<Bool, Never>()
+    private var shouldDismissView = false {
+        didSet {
+            viewDismissalModePublisher.send(shouldDismissView)
+        }
+    }
     
     func getImage(selectedImage: SelectedImage)->Image{
         return selectedImage.image.image
@@ -21,15 +29,16 @@ class NewPostViewModel{
         
         let uploader = ImageUpload()
         
-        uploader.uploadImage(image: image, completion: {url, error in
+        uploader.uploadImage(image: image, completion: {key, error in
             if (error != nil) {
                 return
             }
             Network.shared.apollo.perform(mutation:
-                    CreatePostMutation(description: "", photo: url as! String, user: "Ilario"
+                    CreatePostMutation(description: "", photo: key as! String, user: "Ilario"
                 )){ result in
                     switch result {
                     case .success(let graphQLResult):
+                        self.shouldDismissView = true
                         print()
                     //\(graphQLResult.data?.singleUpload.id)")
                     case .failure(let error):

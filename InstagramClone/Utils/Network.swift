@@ -8,6 +8,7 @@
 
 import Foundation
 import Apollo
+import AWSCore
 
 class Network{
     static let shared = Network()
@@ -27,5 +28,15 @@ class Network{
     }()
     
     private(set) lazy var apollo = ApolloClient(networkTransport: self.networkTransport)
+    
+    private lazy var credentialsProvider = AWSCognitoCredentialsProvider(regionType:.EUCentral1,
+       identityPoolId:"eu-central-1:3ef174ab-15af-49a0-8e96-bdbcc48659bb")
+
+    private lazy var configuration = AWSServiceConfiguration(region:.EUCentral1, credentialsProvider:credentialsProvider)
+
+    init(){
+        AWSServiceManager.default().defaultServiceConfiguration = configuration
+    }
+    
 
 }

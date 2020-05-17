@@ -33,8 +33,11 @@ class NewPostViewModel{
             if (error != nil) {
                 return
             }
+            guard let photoKey = key as! String? else{
+                return
+            }
             Network.shared.apollo.perform(mutation:
-                    CreatePostMutation(description: "", photo: key as! String, user: "Ilario"
+                    CreatePostMutation(description: "", photo: photoKey, user: "Ilario"
                 )){ result in
                     switch result {
                     case .success(let graphQLResult):

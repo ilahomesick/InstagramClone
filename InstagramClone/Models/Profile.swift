@@ -29,7 +29,10 @@ class Profile{
             case .success(let graphQLResult):
                 // We try to parse our result
                 // but in case of any GraphQL errors we present that message
-                self.posts = self.createPosts(posts:graphQLResult.data!.post)
+                guard let post = graphQLResult.data?.post else {
+                    return
+                }
+                self.createPosts(posts:post)
             // In case of failure, we present that message
             case .failure(let error):
                 // Network or response format errors
@@ -39,12 +42,26 @@ class Profile{
         }
     }
     
-    func createPosts(posts: [RetrievePostQuery.Data.Post])->[Post]{
-        var postList: [Post] = []
+    func createPosts(posts: [RetrievePostQuery.Data.Post]){
         posts.forEach({ post in
-            postList.append(Post(post:post, image: Image("ic_logo")))
+            guard let url = post.imageUrl else{
+                return
+            }
+            ImageDownload().downloadImage(key: url, completion: { result, error in
+                if (error == nil){
+                    guard let image = ImageBuilder.buildImage(imageData: result) else{
+                        return
+                    }
+                   
+                         self.posts.append(Post(post:post, image: image))
+                    
+                         //self.didChange.send(self)
+                    
+                }else{
+                    print(error)
+                }
+            })
         })
-        return postList
     }
     
     

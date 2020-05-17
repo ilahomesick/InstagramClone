@@ -22,27 +22,35 @@ class TimeLineDetailViewModel:ObservableObject{
             // In case of success
             case .success(let graphQLResult):
                 // We try to parse our result
-                for follower in graphQLResult.data!.followings {
+                guard let followings = graphQLResult.data?.followings else {
+                    return
+                }
+                for follower in followings {
                     Network.shared.apollo.fetch(query:
                     RetrievePostQuery(username: follower.follower)){result in
                         switch result {
                         // In case of success
                         case .success(let graphQLResult):
-                            for post in graphQLResult.data!.post{
+                            guard let posts = graphQLResult.data?.post else{
+                                return
+                            }
+                            for post in posts{
                                 
-                                ImageDownload().downloadImage(key: post.imageUrl!, completion: { result, error in
+                                ImageDownload().downloadImage(key: post.imageUrl ?? "", completion: { result, error in
                                     if (error == nil){
-                                        let image = Image(uiImage: UIImage(data: result as! Data)!)
+                                        guard let image = ImageBuilder.buildImage(imageData: result) else{
+                                            return
+                                        }
                                         self.posts.append(Post(post:post, image: image))
+                                        
+                                        //self.didChange.send(self)
+                                        
                                     }else{
                                         print(error)
                                     }
                                 })
                             }
-                            DispatchQueue.main.async {
-                                
-                                 self.didChange.send(self)
-                            }
+                            
                         case .failure(let error):
                             // Network or response format errors
                             self.didChange.send(nil)

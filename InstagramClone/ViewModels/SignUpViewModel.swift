@@ -18,7 +18,8 @@ class SignUpViewModel: AlertPresentableViewModel{
             switch result {
             case .success(let graphQLResult):
                 if let sessionToken = graphQLResult.data?.insertUser?.jsonObject["id"] {
-                    self.response = Response(success: true, message: sessionToken as! String)
+                    
+                    self.response = Response(success: true, message: sessionToken as? String ?? "")
                         
                     }
                         // but in case of any GraphQL errors we present that message

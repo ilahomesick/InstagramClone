@@ -11,24 +11,24 @@ import SwiftUI
 
 class Post{
     
-    var image: Image = Image("ic_logo")
+    var image: Image?
     var description: String
     var comments: [Comment]?
     var date: String
-    var id: Int?
     var username: String
     
     init(post:RetrievePostQuery.Data.Post, image: Image){
         self.description = post.description
         self.date = post.date
         self.username = post.user
+        self.image = image
         
     }
     
     func retrieveImage(key:String){
         ImageDownload().downloadImage(key: key, completion: { result, error in
             if (error == nil){
-                self.image = Image(uiImage: UIImage(data: result as! Data)!)
+                self.image = ImageBuilder.buildImage(imageData: result)
             }else{
                 print(error)
             }

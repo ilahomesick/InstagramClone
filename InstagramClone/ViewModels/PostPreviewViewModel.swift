@@ -17,7 +17,7 @@ class PostPreviewViewModel:ObservableObject{
         self.post = post
     }
     
-    func getImage()->Image{
+    func getImage()->Image?{
         return post.image
     }
     

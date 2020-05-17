@@ -17,9 +17,12 @@ struct PostPreviewView: View {
     }
     
     var body: some View {
-        self.model.getImage()
-        .resizable()
-        .frame(width: 136, height: 136)
+        VStack{
+            self.model.getImage().map{ image in
+                image.resizable()
+                    .frame(width: 136, height: 136)
+            }
+        }
     }
 }
 

@@ -20,8 +20,8 @@ class Network{
 //            "X-Parse-Client-Key": "DJbM4VjrJ1GdtsFxF9c3dLgvwoFClppt5k8fcNzA"
 //        ]
         
-        let url = URL(string: "http://0.0.0.0:8080/v1/graphql")!
-        let transport = HTTPNetworkTransport(url: url, session: URLSession(configuration: configuration), sendOperationIdentifiers: false, useGETForQueries: false, enableAutoPersistedQueries: false, useGETForPersistedQueryRetry: false, requestCreator: ApolloRequestCreator())
+        let url = URL(string: "http://0.0.0.0:8080/v1/graphql")
+        let transport = HTTPNetworkTransport(url: url!, session: URLSession(configuration: configuration), sendOperationIdentifiers: false, useGETForQueries: false, enableAutoPersistedQueries: false, useGETForPersistedQueryRetry: false, requestCreator: ApolloRequestCreator())
         self.networkTransport = transport;
         
         return transport
@@ -36,6 +36,10 @@ class Network{
 
     init(){
         AWSServiceManager.default().defaultServiceConfiguration = configuration
+    }
+    
+    public func setClient(client: ApolloClient){
+        self.apollo = client
     }
     
 

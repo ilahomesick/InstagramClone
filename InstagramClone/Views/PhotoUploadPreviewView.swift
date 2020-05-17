@@ -19,9 +19,9 @@ struct PhotoUploadPreviewView: View {
         //Image(self.model.getImage())
         //GeometryReader{geometry in
         VStack{
-            
-            self.model.getImage()
-                    .resizable().frame(width: 103.5, height: 103.5, alignment: .leading)
+            self.model.getImage().map{ image in
+                image.resizable().frame(width: 103.5, height: 103.5, alignment: .leading)
+            }
         }
         
     }

@@ -14,7 +14,7 @@
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "graphiql": "^0.17.5",
+    "graphiql": "^1.4.7",
     "graphql": "^15.0.0",
     "graphql-server-express": "^1.4.1",
     "graphql-tools": "^5.0.0",

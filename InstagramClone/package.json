@@ -13,7 +13,7 @@
     "apollo-server": "^2.12.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "graphiql": "^0.17.5",
     "graphql": "^15.0.0",
     "graphql-server-express": "^1.4.1",
